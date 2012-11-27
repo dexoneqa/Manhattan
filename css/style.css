@@ -1,0 +1,675 @@
+@CHARSET "UTF-8";
+/* HTML5 Boilerplate
+ * ==|== normalize ==========================================================
+ */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section  { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+
+html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+body { margin: 0; font-size: 13px; line-height: 1.231; }
+body, button, input, select, textarea { font-family: sans-serif; color: #222; }
+
+::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
+::selection { background: #FBEB8D; color: #fff; text-shadow: none; }
+
+a { color: #1b75bc; }
+a:visited { color: #551a8b; }
+a:hover { color: #06e; }
+a:focus { outline: none; }
+a:hover, a:active { outline: 0; }
+
+abbr[title] { border-bottom: 1px dotted; }
+b, strong { font-weight: bold; }
+blockquote { margin: 1em 40px; }
+dfn { font-style: italic; }
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+ins { background: #ff9; color: #000; text-decoration: none; }
+mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+pre, code, kbd, samp { font-family: monospace, monospace; _font-family: 'courier new', monospace; font-size: 1em; }
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+q { quotes: none; }
+q:before, q:after { content: ""; content: none; }
+small { font-size: 85%; }
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
+dd { margin: 0 0 0 40px; }
+nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
+img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
+svg:not(:root) { overflow: hidden; }
+figure { margin: 0; }
+
+form { margin: 0; }
+fieldset { border: 0; margin: 0; padding: 0; }
+label { cursor: pointer; }
+legend { border: 0; *margin-left: -7px; padding: 0; }
+button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
+button, input { line-height: normal; *overflow: visible; }
+table button, table input { *overflow: auto; }
+button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; }
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; }
+input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+textarea { overflow: auto; vertical-align: top; resize: vertical; }
+input:valid, textarea:valid {  }
+input:invalid, textarea:invalid { background-color: #f0dddd; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+td { vertical-align: top; }
+
+
+/* ===================================================
+    Based on Initializr
+   =================================================== */
+
+body{ font: 16px/24px Helvetica, Helvetica Neue, Arial, sans-serif; }
+
+.wrapper{
+	margin:0 auto;
+    width:960px;
+}
+
+/* ===================
+    ALL: Color Theme
+   =================== */
+
+#footer-container{ float: right; }
+
+#header-container
+ {
+	background:#f16529;
+}
+
+#title{ color:white; }
+
+::-moz-selection { background: #f16529; color: #fff; text-shadow: none; }
+::selection      { background: #f16529; color: #fff; text-shadow: none; }
+
+
+h2.getPhone {
+	/* IE10 Consumer Preview */ 
+	background-image: -ms-linear-gradient(top, #FAEB7B 0%, #fed128 100%);
+
+	/* Mozilla Firefox */ 
+	background-image: -moz-linear-gradient(top, #FAEB7B 0%, #fed128 100%);
+
+	/* Opera */ 
+	background-image: -o-linear-gradient(top, #FAEB7B 0%, #fed128 100%);
+
+	/* Webkit (Safari/Chrome 10) */ 
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FAEB7B), color-stop(1, #fed128));
+
+	/* Webkit (Chrome 11+) */ 
+	background-image: -webkit-linear-gradient(top, #FAEB7B 0%, #fed128 100%);
+
+	/* W3C Markup, IE10 Release Preview */ 
+	background-image: linear-gradient(to bottom, #FAEB7B 0%, #fed128 100%);
+}
+
+h2.getReservation
+	{
+	/* IE10 Consumer Preview */ 
+	background-image: -ms-linear-gradient(top, #FAA642 0%, #E07409 100%);
+
+	/* Mozilla Firefox */ 
+	background-image: -moz-linear-gradient(top, #FAA642 0%, #E07409 100%);
+
+	/* Opera */ 
+	background-image: -o-linear-gradient(top, #FAA642 0%, #E07409 100%);
+	
+	/* Webkit (Safari/Chrome 10) */ 
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FAA642), color-stop(1, #E07409));
+
+	/* Webkit (Chrome 11+) */ 
+	background-image: -webkit-linear-gradient(top, #FAA642 0%, #E07409 100%);
+
+	/* W3C Markup, IE10 Release Preview */ 
+	background-image: linear-gradient(to bottom, #FAA642 0%, #E07409 100%);
+
+}
+/* ==============
+    MOBILE: Menu
+   ============== */
+nav { width: 960px;}
+nav a{
+	display:block;
+	color: #000000;
+	text-align:center;
+	text-decoration:none;
+	font-weight:500;
+	
+}
+
+nav a:hover, nav a:visited{
+	color: #222222;
+}
+
+nav a:hover{
+	text-decoration:underline;
+}
+
+/* ==============
+    MOBILE: Main
+   ============== */
+
+#main{
+	padding:75px 0;
+	border-right: 1px solid #f1f1f1;
+	border-left: 1px solid #f1f1f1;
+	-webkit-box-shadow:0 4px 8px #aaa;
+	-moz-box-shadow:0 4px 8px #aaa;
+	box-shadow:0 4px 8px #aaa;
+}
+
+#main article h1{
+	font-size:28px;
+	margin: 1px;
+	display: block;
+}
+
+#main aside.map {
+	padding:0px 5% 10px;
+}
+#main section.photoPreviews {
+	padding:0px 5% 10px;
+}
+footer #footer-container {
+	color:black;
+	padding:20px 0;
+	text-align: right;
+}
+footer h3 { text-align: right; }
+/* ===============
+    ALL: IE Fixes
+   =============== */
+
+.ie7 #title{ padding-top:20px; }
+
+.lt-ie9 nav a { margin: 0 0.7%; }
+
+
+/* ==|== non-semantic helper classes ======================================== */
+br.clear { clear:both; display:block; }
+.ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; }
+.ir br { display: none; }
+.hidden { display: none !important; visibility: hidden; }
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+.invisible { visibility: hidden; }
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+
+/* ==|== media queries ====================================================== */
+
+@media only screen and (max-width: 480px) {
+
+/* ====================
+    INTERMEDIATE: Menu
+   ==================== */
+	
+	nav a{
+		float:left;
+		margin:0 1.7%;
+		padding:2px 2%;
+		margin-bottom:0;
+	}
+	
+	nav li:first-child a{ margin-left:0;  }
+	nav li:last-child  a{ margin-right:0; }
+	
+/* ========================
+    INTERMEDIATE: IE Fixes
+   ======================== */
+
+	nav ul li{
+		display:inline;
+	}	
+	.oldie nav a{
+		margin:0 0.7%;		
+	}
+}
+
+
+/* ====================
+    WIDE: CSS3 Effects
+   ==================== */
+
+	#header-container,
+	#main aside.map{
+		-webkit-box-shadow:0 5px 10px #aaa;
+		-moz-box-shadow:0 5px 10px #aaa;
+		box-shadow:0 5px 10px #aaa;
+	}
+
+/* ============
+    WIDE: Menu
+   ============ */
+	
+	#title{
+		float:left;
+	}
+
+
+/* ============
+    WIDE: Main
+   ============ */
+	
+	#main article { 
+		float:left;
+		width:50%;
+		padding: 15px;
+	}
+		
+	#main aside{
+		float:right;
+		width:35%;
+	}
+
+	#main section.photoPreviews {
+	display: block;
+    float: right;
+    width:39%;
+	}
+
+	.wrapper{
+		width:960px; /* 1140px - 10% for margins */
+		margin:0 auto;
+	}
+
+
+
+/*---------------------------- end of HTML Boilerplate styles -----------------------------*/
+body { font: 12px/20px Helvetica Neue,Helvetica,Arial,sans-serif; }
+
+.reviewAnchor, .summary { float: left; }
+.hoursBlock, .mapBlock { padding: 12px; float: left; width: 47%; }
+#reviews, #coupons, .fullGallery { 
+	width: 98%;
+	clear: both;
+	padding: 1%;	
+}
+
+.videoGallery, .photoGallery {
+	width: 48%;
+	float: left;
+	padding:1%;
+}
+
+#reviews h2 { display: block; float: left; }
+
+#reviews h3 { 
+	float: left;
+    padding: 1%;
+    width: 95%;
+    margin: 0;
+ }
+ 
+#reviews a[title="Read All Reviews"] { float: left; display: block; padding: 14px; }
+#reviews a[title="1_star"], #reviews a[title="2_star"], #reviews a[title="3_star"], #reviews a[title="4_star"], #reviews a[title="5_star"] { width: 210px; font-size: 13px; }
+#reviews section, #coupons div { 
+	float: left;
+    padding: 1%;
+    width: 48%; 
+}
+
+#coupons div {
+	display: block;
+	border: 3px dashed #F8951E;
+	border-radius: 12px 12px 12px 12px;
+	background-color: #FEF9F3;
+	width: 44%;
+	margin: 12px;
+}
+
+#coupons h4 { font: 18px/20px Helvetica,Arial,sans-serif; margin: 0; }
+#coupons p { font: 11px/14px sans-serif; color: #999; }
+
+a[title="1_star"] { 
+    background: url("../images/landing_sprite.png") no-repeat 0 -399px transparent;
+    display: block;
+    float: left;
+    padding: 1px 8px 0 0;
+    text-align: right;
+    width: 200px;
+}
+a[title="2_star"] { 
+	background: url("../images/landing_sprite.png") no-repeat 0 -379px transparent;
+	display:block;
+	float:left;
+	padding: 1px 8px 0 0;
+    text-align: right;
+    width: 200px;
+ }
+a[title="3_star"] { 
+	background: url("../images/landing_sprite.png") no-repeat 0 -355px transparent;
+	display:block;
+	float:left;
+	padding: 1px 8px 0 0;
+    text-align: right;
+    width: 200px;
+}
+a[title="4_star"] { 
+	background: url("../images/landing_sprite.png") no-repeat 0 -335px transparent;
+	display:block;
+	float:left;
+	padding: 1px 8px 0 0;
+    text-align: right;
+    width: 200px;
+}
+a[title="5_star"] { 
+	background: url("../images/landing_sprite.png") no-repeat 0 -313px transparent;
+	display:block;
+	float:left;
+	padding: 1px 8px 0 0;
+    text-align: right;
+    width: 200px;
+}
+
+a[title="print"] {
+	float: right;
+	display: block;
+	padding: 3px;
+}
+
+a[title="share"] {
+	float: right;
+	display: block;
+	padding: 3px;
+}
+
+#coupons div h5 { 
+	background: url("../images/landing_sprite.png") no-repeat scroll -1px -254px transparent;
+    color: #F7941E;
+    display: inline-block;
+    font: bold 13px/22px Helvetica Neue,Helvetica,Arial,sans-serif;
+    margin-left: -22px;
+    overflow: visible;
+    padding: 2px 12px 2px 75px;
+}
+
+h5.couponTag { 
+	background: url("../images/landing_sprite.png") no-repeat scroll -1px -254px transparent;
+    border-color: #F7941E #F7941E #F7941E -moz-use-text-color;
+    border-image: none;
+    border-radius: 5px 5px 5px 5px;
+    border-style: dotted dotted dotted none;
+    border-width: 1px 1px 1px 0;
+    color: #F7941E;
+    display: inline-block;
+    font: bold 13px/22px Helvetica Neue,Helvetica,Arial,sans-serif;
+    margin-left: -22px;
+    overflow: visible;
+    padding: 2px 12px 2px 75px;
+}
+/* firefox rounded corner alternative */
+@-moz-document url-prefix() {
+	h5.couponTag { border-top: 1px solid #f7941e; border-right: 1px solid #f7941e; border-bottom: 1px solid #f7941e; border-left: none; 	-moz-border-radius: 0px 5px 5px 6px;
+}
+	#coupons div { border: 3px solid #F8951E; }
+}
+
+
+/* ----- get phone number button ---*/
+h2.getPhone {
+	background-color: #FBEA75;
+    border-bottom: 4px solid #EDB114;
+    border-radius: 5px 5px 5px 6px;
+    display: inline-block;
+    float: left;
+    margin: 16px 20px 8px 0px;
+    padding: 8px 12px;
+}
+h2.getPhone a { 
+	background: url("../images/landing_sprite.png") no-repeat scroll 0 -99px transparent;
+    color: #000;
+    display: block;
+    font: bold 16px Arial,sans-serif;
+    height: 23px;
+    padding-left: 25px;
+    text-decoration: none;
+}
+
+/*---- get reservation button -----*/
+h2.getReservation a {
+	background: url("../images/landing_sprite.png") no-repeat scroll 0 -74px transparent;
+    color: #000;
+    display: block;
+    font: bold 16px Arial,sans-serif;
+    height: 23px;
+    padding-left: 25px;
+    text-decoration: none;
+}
+h2.getReservation {
+	float: left;
+	display: inline-block;
+	padding: 8px 12px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border-bottom: 4px solid #ce6002;
+	background-color: #F49A34;
+	margin: 16px 20px 8px 0px;
+	font: bold 16px Arial, sans-serif;
+}
+
+
+#header-container  {
+    background: url('../images/nav-bg.png') repeat scroll 0 0 #FAEA79;
+    border-bottom: 5px solid #EDB114;
+    box-shadow: 0 4px 10px #CCCCCC;
+    float: left;
+    height: 51px;
+    left: 0;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    z-index: 20;
+}
+    
+nav {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    height: 40px;
+    margin: 0 auto;
+    padding: 0;
+ 	width: 966px;
+}
+
+nav ul li {
+	border-right: 1px dashed #EDB114;
+	float: left;
+    font: bold 16px/18px Helvetica Neue, Helvetica, Arial, sans-serif; 
+    padding: 17px 10px;
+}
+nav ul li a { 
+	color: #222222;
+	line-height: 19px;
+}
+nav ul li a:hover {
+	color: #CD8338;
+}
+nav ul li span.active {
+	background: url("../images/landing_sprite.png") no-repeat scroll -67% -121px transparent;
+    border: medium none;
+    display: block;
+    height: 17px;
+    }
+nav ul li.actionNav {
+	border: none;
+	float: left;
+	font-weight:normal;
+}
+
+nav ul li.actionNav:last-child {
+	border-right: 1px dashed #EDB114;
+}
+
+
+/* ------ General Company Info -------- */
+
+.street-address {
+	font: normal 14px Arial, sans-serif;
+	line-height: 24px;
+	margin: 5px 0 5px 0;
+}
+.summary p { font: normal 12px/18px Helvitica Neue, Helvetica, Arial, sans-serif; color: #666666; }
+.businessDescription p { display: block; clear: both; }
+.adr h4 { font: normal 14px/22px Arial, sans-serif; margin: 1px;}
+
+
+/* -------- aside -----*/ 
+aside.map a, aside.map p { font-family: Arial, sans-serif; font-size: 14px; color: #000000; padding: 0px 5px; text-align: center; }
+
+#main aside.map      { 
+	background: none repeat scroll 0 0 #FFFFFF; 
+	border: 6px solid #F1F1F1;
+    padding: 8px;
+    width: 37%; 
+    margin-right: 20px;
+}
+    
+/* --------- photo gallery anchor ----------*/
+
+section.photoPreviews > h2 {
+	display: inline;
+}
+
+section.photoPreviews > a.viewGallery {
+	padding: 15px;
+}
+
+section.photoGallery > ul, 
+section.photoPreviews > ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+section.photoPreviews > ul > li.anchorGallery, 
+section.photoGallery > ul > li.anchorGallery {
+	float: left;
+}
+
+section.photoPreviews > ul > li.anchorGallery {
+	height: 66px;
+	margin: 6px;
+	width: 66px;
+}
+
+section.photoGallery > ul > li.anchorGallery {
+	height: 80px;
+	margin: 5px;
+	width: 80px;
+}
+
+section.photoGallery > ul > li.anchorGallery > a > img, 
+section.photoPreviews > ul > li.anchorGallery > a > img {
+	position: absolute;
+}
+
+section.photoPreviews > ul > li.anchorGallery > a > img {
+	clip: rect(0 66px 66px 0);
+}
+
+section.photoGallery > ul > li.anchorGallery > a > img {
+	clip: rect(0 80px 80px 0);
+}
+
+/* --------- hours --------------*/
+
+#mon.currentDay, #tues.currentDay, #wed.currentDay, #thurs.currentDay, #fri.currentDay, #sat.currentDay, #sun.currentDay { border: 1px solid #FAEC7F; }
+
+.operationHours {
+    font-size: 12px;
+    margin: 15px 0;
+}
+.operationHours td {
+    border-left: 1px solid #CCCCCC;
+    color: #393939;
+    padding: 0 6px;
+    width: 91px;
+}
+.operationHours td#mon {
+    border-left: medium none;
+    padding-left: 0;
+}
+.operationHours span {
+    display: block;
+}
+.operationHours .day {
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.operationHours .currentDay {
+    background: none repeat scroll 0 0 #FFFFCC;
+}
+
+/* right navigation css sprites */
+nav ul.actionNav { float: right; }
+nav ul.actionNav li { padding: 16px 11px 14px; }
+nav ul.social { border-right: 1px dashed #EDB114; padding-bottom: 12px; }
+nav ul.social li { border: 0; padding: 18px 0px 0 7px; }
+
+nav ul.actionNav li a {
+	margin: 0;
+	background: url("../images/landing_sprite.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 25px;
+    padding: 0 0 0 30px;
+    color: #000000;
+    font-weight: normal;
+    font-size: 12px;
+    text-decoration: underline;
+}
+nav ul.actionNav li a.trNavPhone {
+	background-image: url('../images/landing_sprite.png');
+	background-position: 2px -24px;
+}
+nav ul.actionNav li a.trNavEmail {
+	background-image: url('../images/landing_sprite.png');
+	background-position: -1px -2px;
+	height: 22px;
+}
+nav ul.actionNav li a.trNavSend {
+	background-image: url('../images/landing_sprite.png');
+	background-position: -1px -50px;
+	height: 22px;
+}
+
+nav ul.actionNav li a.fbIco { 
+	background-image: url('../images/landing_sprite.png');
+	background-position: -1px -195px;
+	height: 22px;
+}
+nav ul.actionNav li a.twtrIco { 
+	background-image: url('../images/landing_sprite.png');
+	background-position: -1px -145px;
+	height: 22px;
+}
+
+a.backToTop {
+	background-color: #EDB113;
+    background-image: url("../images/landing_sprite.png");
+    background-position: 80px 210px;
+    color: white;
+    display: block;
+    font: bold 12px/4px bold Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    height: 12px;
+    line-height: 4px;
+    padding: 11px 20px 4px 5px;
+    position: relative;
+    right: -90%;
+    text-decoration: none;
+    top: 16px;
+    width: 85px;
+    border-radius: 0px 0px 5px 5px;
+}
