@@ -531,53 +531,6 @@ aside.map a, aside.map p { font-family: Arial, sans-serif; font-size: 14px; colo
     width: 37%; 
     margin-right: 20px;
 }
-    
-/* --------- photo gallery anchor ----------*/
-
-section.photoPreviews > h2 {
-	display: inline;
-}
-
-section.photoPreviews > a.viewGallery {
-	padding: 15px;
-}
-
-section.photoGallery > ul, 
-section.photoPreviews > ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-
-section.photoPreviews > ul > li.anchorGallery, 
-section.photoGallery > ul > li.anchorGallery {
-	float: left;
-}
-
-section.photoPreviews > ul > li.anchorGallery {
-	height: 66px;
-	margin: 6px;
-	width: 66px;
-}
-
-section.photoGallery > ul > li.anchorGallery {
-	height: 80px;
-	margin: 5px;
-	width: 80px;
-}
-
-section.photoGallery > ul > li.anchorGallery > a > img, 
-section.photoPreviews > ul > li.anchorGallery > a > img {
-	position: absolute;
-}
-
-section.photoPreviews > ul > li.anchorGallery > a > img {
-	clip: rect(0 66px 66px 0);
-}
-
-section.photoGallery > ul > li.anchorGallery > a > img {
-	clip: rect(0 80px 80px 0);
-}
 
 /* --------- hours --------------*/
 
@@ -669,4 +622,59 @@ a.backToTop {
     top: 16px;
     width: 85px;
     border-radius: 0px 0px 5px 5px;
+}
+    
+/* --------- Photo Preview ----------*/
+/* --------- Photo Gallery ----------*/
+/* --------- Video Gallery ----------*/
+
+section.photoPreviews > h2, 
+section.photoGallery > h2, 
+section.videoGallery > h2 {
+	display: inline;
+}
+
+section.photoPreviews > a, 
+section.photoGallery > a, 
+section.videoGallery > a {
+	padding: 15px;
+}
+
+section.photoPreviews > ul, 
+section.photoGallery > ul, 
+section.videoGallery > ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+section.photoPreviews > ul > li, 
+section.photoGallery > ul > li {
+	float: left;
+}
+
+section.photoPreviews > ul > li {
+	height: 66px;
+	margin: 6px;
+	width: 66px;
+}
+
+section.photoGallery > ul > li {
+	height: 80px;
+	margin: 5px;
+	width: 80px;
+}
+
+section.photoPreviews > ul > li > a > img, 
+section.photoGallery > ul > li > a > img, 
+section.videoGallery > ul > li > a > img {
+	position: absolute;
+}
+
+section.photoPreviews > ul > li > a > img {
+	clip: rect(0 66px 66px 0);
+}
+
+section.photoGallery > ul > li > a > img {
+	clip: rect(0 80px 80px 0);
 }
