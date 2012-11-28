@@ -285,7 +285,17 @@ br.clear { clear:both; display:block; }
 body { font: 12px/20px Helvetica Neue,Helvetica,Arial,sans-serif; }
 
 .reviewAnchor, .summary { float: left; }
-.hoursBlock, .mapBlock { padding: 12px; float: left; width: 47%; }
+
+.hoursBlock, 
+.mapBlock {
+	padding: 12px;
+	width: 47%;
+}
+
+.hoursBlock {
+	float: left;
+}
+
 #reviews, #coupons, .fullGallery { 
 	width: 98%;
 	clear: both;
