@@ -292,7 +292,8 @@ body { font: 12px/20px Helvetica Neue,Helvetica,Arial,sans-serif; }
 	padding: 1%;	
 }
 
-.videoGallery, .photoGallery {
+.videoGallery, 
+.photoGallery {
 	width: 48%;
 	float: left;
 	padding:1%;
