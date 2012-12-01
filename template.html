@@ -16,11 +16,13 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"></meta>
 		<title>Vanity Profile Template</title>
 		<meta name="viewport" content="width=device-width,initial-scale=1"></meta>
+        
 		<!--[if lt IE 9]><!-->
 		<link rel="stylesheet" href="css/main.css"></link>
 		<link rel="stylesheet" href="css/normalize.css"></link>
 		<script src="js/libs/html5.js"></script>
 		<!--<![endif]-->
+
         <link rel="stylesheet" href="css/site.css"></link>
         <link rel="stylesheet" href="css/style.css"></link>
         <link rel="stylesheet" href="css/dialogue.css"></link>
@@ -315,6 +317,13 @@
         <script type="text/javascript" src="js/libs/highslide.js"></script>
         <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=geometry&sensor=false&v=3.8&channel=site&client=gme-businessinc"></script>
         
+        
+        <!-- 
+        Site-wide JavaScript
+        -->
+        
+        <script type="text/javascript" src="js/site.js"></script>
+
         <!-- 
         Page-specific JavaScript.
         -->
@@ -330,15 +339,9 @@
         	        hs.expand(this, {slideshowGroup: "profileImgs"});
         	    });
         	    
-        	    $(".trNavEmail").click(function () {
-        	        hs.htmlExpand(this, {contentId: "Email-html"});
-        	    });
-        	    
-        	    $(".trNavSend").click(function () {
-        	        hs.htmlExpand(this, {contentId: "Phone-html"});
-        	    });
-        	    
         	});
         </script>
+        
 	</body>
+    
 </html>
