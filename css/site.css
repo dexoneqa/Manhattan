@@ -5,9 +5,10 @@ body {
 }
 
 
+
 .wrapper {
     margin: 0 auto;
-    width: 960px;
+    width: 960px; /* 1140px - 10% for margins */
 }
 
 /* ===================
@@ -57,4 +58,62 @@ nav a:hover,nav a:visited {
 
 nav a:hover {
     text-decoration: underline;
+}
+
+/* ===============
+    ALL: IE Fixes
+   =============== */
+.ie7 #title {
+    padding-top: 20px;
+}
+
+.lt-ie9 nav a {
+    margin: 0 0.7%;
+}
+
+br.clear {
+    clear: both;
+    display: block;
+}
+
+.clearfix:before,.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+/* ==|== media queries ====================================================== */
+@media only screen and (max-width: 480px) {
+   /* ====================
+    INTERMEDIATE: Menu
+   ==================== */
+    nav a {
+        float: left;
+        margin: 0 1.7%;
+        padding: 2px 2%;
+        margin-bottom: 0;
+    }
+    nav li:first-child a {
+        margin-left: 0;
+    }
+    nav li:last-child  a {
+        margin-right: 0;
+    }
+
+    /* ========================
+    INTERMEDIATE: IE Fixes
+   ======================== */
+    nav ul li {
+        display: inline;
+    }
+    .oldie nav a {
+        margin: 0 0.7%;
+    }
 }

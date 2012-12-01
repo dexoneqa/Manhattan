@@ -64,119 +64,55 @@ footer #footer-container {
 footer h3 {
     text-align: right;
 }
-/* ===============
-    ALL: IE Fixes
-   =============== */
-.ie7 #title {
-    padding-top: 20px;
-}
-
-.lt-ie9 nav a {
-    margin: 0 0.7%;
-}
-
-br.clear {
-    clear: both;
-    display: block;
-}
-
-.clearfix:before,.clearfix:after {
-    content: "";
-    display: table;
-}
-
-.clearfix:after {
-    clear: both;
-}
-
-.clearfix {
-    zoom: 1;
-}
-
-/* ==|== media queries ====================================================== */
-@media only screen and (max-width: 480px) {
-   /* ====================
-    INTERMEDIATE: Menu
-   ==================== */
-    nav a {
-        float: left;
-        margin: 0 1.7%;
-        padding: 2px 2%;
-        margin-bottom: 0;
-    }
-    nav li:first-child a {
-        margin-left: 0;
-    }
-    nav li:last-child  a {
-        margin-right: 0;
-    }
-
-    /* ========================
-    INTERMEDIATE: IE Fixes
-   ======================== */
-    nav ul li {
-        display: inline;
-    }
-    .oldie nav a {
-        margin: 0 0.7%;
-    }
-}
 
 /* ====================
     WIDE: CSS3 Effects
    ==================== */
-#header-container,#main aside.map {
+#header-container,
+#main > aside.map {
     -webkit-box-shadow: 0 5px 10px #aaa;
     -moz-box-shadow: 0 5px 10px #aaa;
     box-shadow: 0 5px 10px #aaa;
 }
 
 /* ============
-    WIDE: Menu
-   ============ */
-#title {
-    float: left;
-}
-
-/* ============
     WIDE: Main
    ============ */
-#main article {
+#main > article {
     float: left;
     width: 50%;
     padding: 15px;
 }
 
-#main aside {
+#main > aside {
     float: right;
     width: 35%;
 }
 
-#main section.photoPreviews {
+#main > article > section.photoPreviews {
     display: block;
     float: right;
     width: 39%;
 }
 
-.wrapper {
-    width: 960px; /* 1140px - 10% for margins */
-    margin: 0 auto;
-}
-
-.reviewAnchor,.summary {
+section.reviewAnchor,
+section.summary {
     float: left;
 }
 
-.hoursBlock,.mapBlock {
+section.hoursBlock,
+section.mapBlock {
     padding: 12px;
     width: 47%;
 }
 
-.hoursBlock {
+section.hoursBlock {
     float: left;
 }
 
-#reviews,#coupons,.fullGallery {
+section#reviews, 
+section#coupons, 
+section.fullGallery {
     width: 98%;
     clear: both;
     padding: 1%;
