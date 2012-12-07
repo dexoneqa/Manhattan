@@ -52,17 +52,33 @@ h2.getReservation {
 }
 
 #main section.photoPreviews {
-    padding: 0px 5% 10px;
+    float: left;
+    padding: 50px 2px 12px 12px;
+    width: 47%;
 }
 
 footer #footer-container {
-    color: black;
     padding: 20px 0;
-    text-align: right;
 }
 
-footer h3 {
+footer a {
+   	color: #333333;
+    display: block;
+    float: right;
+    font-size: 11px;
+    padding: 7px;
     text-align: right;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+a.dexlogo {
+    background: url("../images/landing_sprite.png") no-repeat scroll 0 -281px transparent;
+    display: block;
+    height: 25px;
+    overflow: hidden;
+    padding: 0;
+    width: 156px;
 }
 
 /* ====================
@@ -98,6 +114,7 @@ footer h3 {
 section.reviewAnchor,
 section.summary {
     float: left;
+    clear: left;
 }
 
 section.hoursBlock,
@@ -108,6 +125,12 @@ section.mapBlock {
 
 section.hoursBlock {
     float: left;
+}
+
+section#fullMap { 
+	clear: left;
+    padding: 1px 0 0 12px;
+    width: 644px;
 }
 
 section#reviews, 
@@ -132,21 +155,21 @@ section.fullGallery {
 #reviews h3 {
     float: left;
     padding: 1%;
-    width: 95%;
+    width: 100%;
     margin: 0;
 }
 
-#reviews a.Read All Reviews {
+#reviews a.readAll {
     float: left;
     display: block;
     padding: 14px;
 }
 
-#reviews a.1_star,
-#reviews a.2_star,
-#reviews a.3_star,
-#reviews a.4_star,
-#reviews a.5_star {
+#reviews a.one_star,
+#reviews a.two_star,
+#reviews a.three_star,
+#reviews a.four_star,
+#reviews a.five_star {
     font-size: 13px;
 }
 
@@ -178,28 +201,30 @@ section.fullGallery {
 #reviews > section > h3 > a {
     display: block;
     float: left;
-    padding: 1px 8px 0 0;
-    text-align: right;
-    width: 200px;
+    padding: 1px 8px 0 105px;
+    width: 100%;
+    font-size: 12px;
+    color: #333333;
+    text-decoration: none;
 }
 
-a.1_star {
+a.one_star {
     background: url("../images/landing_sprite.png") no-repeat 0 -399px transparent;
 }
 
-a.2_star {
+a.two_star {
     background: url("../images/landing_sprite.png") no-repeat 0 -379px transparent;
 }
 
-a.3_star {
+a.three_star {
     background: url("../images/landing_sprite.png") no-repeat 0 -355px transparent;
 }
 
-a.4_star {
+a.four_star {
     background: url("../images/landing_sprite.png") no-repeat 0 -335px transparent;
 }
 
-a.5_star {
+a.five_star {
     background: url("../images/landing_sprite.png") no-repeat 0 -313px transparent;
 }
 
@@ -214,7 +239,14 @@ a.share {
     display: block;
     padding: 3px;
 }
-
+a.share:after {
+    background: url("../images/landing_sprite.png") no-repeat scroll 0 -171px transparent;
+    content: "";
+    display: block;
+    float: right;
+    height: 20px;
+    width: 22px;
+}
 #coupons div h5 {
     background: url("../images/landing_sprite.png") no-repeat scroll -1px -254px
         transparent;
@@ -261,7 +293,6 @@ h2.getPhone {
     background-color: #FBEA75;
     border-bottom: 4px solid #EDB114;
     border-radius: 5px 5px 5px 6px;
-    display: inline-block;
     float: left;
     margin: 16px 20px 8px 0px;
     padding: 8px 12px;
@@ -280,8 +311,7 @@ h2.getPhone a {
 
 /*---- get reservation button -----*/
 h2.getReservation a {
-    background: url("../images/landing_sprite.png") no-repeat scroll 0 -74px
-        transparent;
+    background: url("../images/landing_sprite.png") no-repeat scroll 0 -74px transparent;
     color: #000;
     display: block;
     font: bold 16px Arial, sans-serif;
@@ -292,7 +322,6 @@ h2.getReservation a {
 
 h2.getReservation {
     float: left;
-    display: inline-block;
     padding: 8px 12px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -561,9 +590,71 @@ section.photoPreviews>ul>li>a>img,section.photoGallery>ul>li>a>img,section.video
 }
 
 section.photoPreviews>ul>li>a>img {
-    clip: rect(0, 66px, 66px, 0);
+    clip: rect(0 66px 66px 0);
 }
 
 section.photoGallery>ul>li>a>img {
-    clip: rect(0, 80px, 80px, 0);
+    clip: rect(0 80px 80px 0);
 }
+
+.mapWrapper {
+	border: 1px solid #999999;
+    display: block;
+    float: left;
+    height: 370px;
+    margin: 0;
+    width: 642px;
+}
+.addtlLinks { 
+    background: none repeat scroll 0 0 #F3F3F3;
+    border-color: #CCCCCC #CCCCCC -moz-use-text-color;
+    border-image: none;
+    border-radius: 5px 5px 0 0;
+    border-style: solid solid none;
+    border-width: 1px 1px 0;
+    display: block;
+    float: right;
+    width: 176px;
+}
+
+.addtlLinks a {
+	font: 13px/20px sans-serif;
+    padding:5px 10px 9px 10px;
+}
+
+.addtlLinks a.currentMap {
+	font-weight: bold;
+}
+
+/* Get Directions */
+
+#getDirections {
+	float: right;
+    text-align: left;
+    width: 280px;
+}
+#getDirections h2 {
+	font: bold 18px/24px sans-serif;
+    margin: 75px 0 0;
+}
+#getDirections p {
+	color: #999999;
+	display: block;
+	padding: 0;
+	margin: 0;
+	font: 12px/18px sans-serif;
+	
+}
+#getDirections span {
+	font-weight: bold;
+	color: #333333;
+}
+#getDirections form {
+	background: none repeat scroll 0 0 #F3F3F3;
+    border: 1px solid #999999;
+    margin: 5px 5px 0 0;
+    padding: 13px;
+    width: 230px;
+}
+
+#getDirections input, #getDirections select, #getDirections img.mapSubmit { display: block; margin: 8px; }
