@@ -28,6 +28,7 @@
         <link rel="stylesheet" href="css/site.css"></link>
         <link rel="stylesheet" href="css/style.css"></link>
         <link rel="stylesheet" href="css/dialogue.css"></link>
+        
 	</head>
 
 	<body class="wrapper">
@@ -161,7 +162,7 @@
                     
            </article>
                 
-                <section class="photoPreviews">
+                <section class="photoPreview">
                 
                     <h2>Photos</h2>
                     
@@ -670,13 +671,18 @@
         <script type="text/javascript">
         	$(document).ready(function () {
         	    
-        	    var imagePathSelector = "section.photoGallery > ul > li > a, section.photoPreviews > ul > li > a";
+        	    var photo = {
+        	            gallery: "photoGallery", 
+        	            preview: "photoPreview", 
+        	            pattern: " > ul > li > a", 
+        	            addGallery: function (event) {
+                	        event.preventDefault();
+                	        
+                	        hs.expand(this, {slideshowGroup: "profileImgs"});
+                	    }
+        	    };
         	    
-        	    $(imagePathSelector).click(function (event) {
-        	        event.preventDefault();
-        	        
-        	        hs.expand(this, {slideshowGroup: "profileImgs"});
-        	    });
+        	    $("section." + photo.gallery + photo.pattern).click();
         	    
         	});
         </script>
