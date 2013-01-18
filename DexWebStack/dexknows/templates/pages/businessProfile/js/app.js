@@ -14,8 +14,16 @@ requirejs.config({
 });
 
 // Start the main app logic.
-requirejs(['jquery', 'dexo', 'text', 'app/businessProfile', 'text!modules/claimBusiness.html'], 
-        function ($, dexo, text, businessProfile, claimBusiness) {
+requirejs(
+        [
+         'jquery', 
+         'dexo', 
+         'text', 
+         'app/businessProfile', 
+         'text!modules/claimBusiness.html', 
+         'http://player.dexknows.com/player.js?width=640&height=360&embedCode=5jbXhoNDo45BqOnr-FYIqC0T_lxN3b6t&wmode=transparent'
+        ],  
+        function ($, dexo, text, businessProfile, claimBusiness, ooyala) {
     
     var myDialogue = new DEXO.ui.dialogue();
     

@@ -5,6 +5,10 @@
  * all the places that have the things that we need for the .
  ******************************************************************************/
  
+.leftWell > .section {
+    border-top: 1px dotted #e6e6e7;
+}
+ 
 .businessProfile {
 	color: #000;
 	font-family: Arial, Tahoma, Verdana, 'sans-serif';
@@ -96,8 +100,8 @@
 .businessProfile > nav > ul.profileTools > li > span.annotation {
 	color: #676767;
 	float: left;
-	font-size: 11px;
-	line-height: 24px;
+    font-size: 12px;
+    line-height: 26px;
 }
 
 .businessProfile > nav > ul.profileTools > li > a {
@@ -223,37 +227,21 @@
 /* --------- Photo Preview ----------*/
 /* --------- Photo Gallery ----------*/
 /* --------- Video Gallery ----------*/
-.fullGallery > section {
-    display: inline-block;
-}
 
-#photoPreviews > h2, 
-#photoGallery > h2, 
-#videoGallery > h2 {
-    display: inline;
-}
-
-#photoPreviews > a, 
-#photoGallery > a, 
-#videoGallery > a {
+#photoPreviews > a {
     padding: 15px;
 }
 
-#photoPreviews > ul, 
-#photoGallery > ul, 
-#videoGallery > ul {
+#photoPreviews > ul {
     list-style: none;
+    height: 200px;
     margin: 0;
     padding: 0;
 }
 
-#photoPreviews > ul > li, 
-#photoGallery > ul > li {
-    float: left;
-}
-
 #photoPreviews > ul > li {
     height: 90px;
+    float: left;
     margin: 6px;
     width: 90px;
 }
@@ -280,13 +268,17 @@
 
 /** Reviews **/
 
+#reviews > h2 {
+    margin: 10px 0 5px 0;
+}
+
 #reviews > #writeReview {
 	border: solid #d8d8d8 1px;
 	border-radius: 5px;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	float: right;
-	margin-top: -20px;
+	margin-top: -55px;
 
 	background: #ffffff; /* Old browsers */
 	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
@@ -352,12 +344,24 @@
     color: #000;
 }
 
+#reviews > .rating {
+    display: block;
+    height: 25px;
+}
+
+#reviews > .rating > .readAllReviews {
+    display: block;
+    margin: 0 0 0 105px;
+    padding: 4px 0 0 0;
+}
+
 #content > .floatRight {
     float: right;
 }
 
 #content > .floatRight > .rating {
     height: 23px;
+    margin-top: 5px;
     width: 95px
 }
 
@@ -368,8 +372,10 @@
 }
 
 #content > p, 
-#content > h3 {
-    line-height: 24px;
+#content > h3, 
+.section p, 
+.section h3 {
+    line-height: 18px;
 }
 
 #content > h3 {
