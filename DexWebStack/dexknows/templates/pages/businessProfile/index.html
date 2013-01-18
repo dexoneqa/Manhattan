@@ -1,10 +1,18 @@
+<!--[if IE]><![endif]-->
 <!doctype html>
+
 <!--[if IE 7]>
+
 <html class="no-js ie7 oldie" lang="en">
+
 <![endif]-->
+
 <!--[if IE 8]>
+
 <html class="no-js ie8 oldie" lang="en">
+
 <![endif]-->
+
 <html class="no-js" lang="en">
 
 	<head>
@@ -13,21 +21,36 @@
 
 		<title>Business Profile Page Template</title>
 		
-        <!--[if IE]><![endif]-->
+        <!--[if lt IE 10]>
         
-        <!--[if IE]>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-        <![endif]-->
+        Support for IE with Chrome frame.
         
-        <!--[if lt IE 9]>
-        <link rel="stylesheet" href="css/main.css" />
-        <link rel="stylesheet" href="css/normalize.css" />
-        <script type="text/javascript" src="js/lib/html5shiv.js"></script>
+        More info on X-UA-Compatible: http://bit.ly/11EXJNb
+        
         <![endif]-->
 
+        <!--[if lt IE 10]>
+        
+        <meta http-equiv="x-ua-compatible" content="chrome=1" />
+        
+        <![endif]-->
+        
         <link rel="stylesheet" href="css/site.css" />
-        <link rel="stylesheet" href="css/page.css" />
                     
+        <link rel="stylesheet" href="css/page.css" />
+        
+        <!--[if lt IE 9]>
+        
+        <link rel="stylesheet" href="css/main.css" />
+        
+        <link rel="stylesheet" href="css/normalize.css" />
+        
+        <script type="text/javascript" src="js/lib/html5shiv.js"></script>
+        
+        <![endif]-->
+        
+        <link rel="icon" type="image/x-icon" href="http://www.dexknows.com/favicon.ico" />
+
 	</head>
 
 	<body>
@@ -49,6 +72,8 @@
 						<input class="globalSearch inputText what" id="what" type="text" />
 						
 						<input class="globalSearch inputText where" id="where" type="text" />
+                        
+                        <input type="submit" value="Search" id="searchBtn" class="searchSubmit inputButton globalSearch" />
 					
 					</form>
 				
@@ -57,6 +82,18 @@
 			</div><!-- // .globalBar -->
 		
 		</div><!-- // .globalArch -->
+        
+        <div class="dropdown">
+        
+            <ul class="quickLinks">
+            
+                <li class="last"><a id="loginLinkHeader" href="#" >Log In</a></li>
+
+                <li><a id="signUpLinkHeader" href="#">Sign Up</a></li>                          
+        
+            </ul>
+            
+        </div>
 
         <div class="blackOverlay"></div><!-- // .blackOverlay -->
 	
@@ -154,7 +191,7 @@
     			
     			</header><!-- // .businessProfile .vcard -->
                 
-                <section class="hoursBlock">
+                <section id="hoursBlock">
                 
                     <h2>Hours</h2>
                         
@@ -177,38 +214,63 @@
                 <section id="reviews">
                 
                     <h2>Reviews</h2>
+                    
+                    <div class="rating oneStar">&nbsp;</div>
+                            
+                    <a href="#" class="readAllReviews" title="3 Reviews">3 Reviews</a>
+                    
+                    <div id="writeReview">
+
+                        <a href="#">Write a Review</a>
+
+                    </div>
         
-                    <a href="#" class="readAllReviews" title="Read All Reviews">Read all Reviews &raquo; </a><br class="clear" />
+                    <section id="content">
                     
-                    <section>
-                    
-                        <h3><a href="#" class="5_star">It Retro Ethical Messenger Bag Helvetica!</a></h3>
-                        <p>Gastropub pitchfork single-origin coffee trust fund, PBR put a bird on it retro ethical messenger bag helvetica hella 3 wolf moon.<a href="#">Read More &raquo;</a></p>
+                        <h3><a href="#">Our Favorite pizza</a></h3>
+                        
+                        <div class="floatRight">
+                        
+                            <span class="ratingDate">5/1/2012</span>
+                            
+                            <div class="rating fiveStars">&nbsp;</div>
+                            
+                        </div>
+                        
+                        <p>
+                            <em>Kimberly Lusco</em><br />
+                            My god I love this place. It is totally old Skool, dark wood everywhere, hasn't ever been updated since opening decades ago...but there is just something awesome about the pizza. And they make some...
+                        </p>
                                         
-                        <h3><a href="#" class="1_star">Viral Mumblecore Tattooed Cardigan!</a></h3>
-                        <p>Dreamcatcher street art forage, viral mumblecore tattooed cardigan terry richardson trust fund art party echo park. Vinyl aesthetic flexitarian banksy brunch. Tofu shoreditch bicycle rights organic odd future keffiyeh. Before they sold out scenester fap chillwave retro readymade.<a href="#">Read More &raquo;</a></p>
+                        <h3><a href="#">Viral Mumblecore Tattooed Cardigan!</a></h3>
                         
-                        <h3><a href="#" class="4_star">Polaroid high life nisi vero before they sold out!</a></h3>
-                        <p>Eu brunch bespoke vegan, freegan dreamcatcher banh mi mixtape post-ironic voluptate food truck put a bird on it master cleanse qui placeat. Deserunt williamsburg id consectetur odd future nesciunt. Sunt banh mi twee sed sustainable vegan, selvage +1 shoreditch magna laborum 8-bit DIY narwhal cillum.<a href="#">Read More &raquo;</a></p>
+                        <div class="floatRight">
                         
-                    </section>
-                    
-                    <section>
-                    
-                        <h3><a href="#" class="2_star">Cray Nihil Salvia Consequat!</a></h3>
-                        <p>Blog aliqua eiusmod, lo-fi brooklyn synth keytar cillum. Cray nihil salvia consequat. Blog delectus locavore high life nostrud. Single-origin coffee voluptate PBR enim dolore. Pitchfork dolor irony mlkshk, brunch mixtape occaecat portland farm-to-table. Irure delectus keffiyeh scenester, aute id PBR you probably haven't heard of them ullamco wes anderson vegan farm-to-table echo park letterpress pork belly. Sed tempor messenger bag officia irony before they sold out whatever, thundercats tattooed aliquip assumenda jean shorts.<a href="#">Read More &raquo;</a></p>
+                            <span class="ratingDate">5/1/2012</span>
+                            
+                            <div class="rating oneStar">&nbsp;</div>
+                            
+                        </div>
+                            
+                        <p>Dreamcatcher street art forage, viral mumblecore tattooed cardigan terry richardson trust fund art party echo park. Vinyl aesthetic flexitarian banksy brunch. Tofu shoreditch bicycle rights organic odd future keffiyeh. Before they sold out scenester fap chillwave retro readymade.</p>
                         
-                        <h3><a href="#" class="3_star">Messenger Bag Wayfarers !</a></h3>
-                        <p>Cliche locavore reprehenderit forage, gastropub voluptate retro bushwick messenger bag wayfarers minim dreamcatcher vegan street art. Pinterest hella tumblr, vegan aliqua carles nesciunt tempor laborum authentic. Do cupidatat brooklyn, magna food truck synth proident tempor etsy.<a href="#">Read More &raquo;</a></p>
+                        <h3><a href="#">Polaroid high life nisi vero before they sold out!</a></h3>
                         
-                        <h3><a href="#" class="5_star"> Best Pizza Ever!</a></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eleifend dolor in purus tincidunt eget pulvinar sapien sagittis. Duis sollicitudin pharetra nibh, quis adipiscing lorem malesuada ut. Morbi                            ornare lacus vel velit ullamcorper viverra pharetra libero porttitor. In porta adipiscing metus, at tristique elit semper a … <a href="#">Read More &raquo;</a></p>
+                        <div class="floatRight">
+                        
+                            <span class="ratingDate">5/1/2012</span>
+                            
+                            <div class="rating fourStars">&nbsp;</div>
+                            
+                        </div>
+                            
+                        <p>Eu brunch bespoke vegan, freegan dreamcatcher banh mi mixtape post-ironic voluptate food truck put a bird on it master cleanse qui placeat. Deserunt williamsburg id consectetur odd future nesciunt. Sunt banh mi twee sed sustainable vegan, selvage +1 shoreditch magna laborum 8-bit DIY narwhal cillum.</p>
                         
                     </section>
                     
                 </section>
                 
-                <section class="photoGallery">
+                <section id="photoGallery">
                 
                     <h2>Photos (20)</h2>
                     
@@ -245,7 +307,7 @@
                     
                 </section><!-- // .photoGallery -->
                     
-                <section class="videoGallery">
+                <section id="videoGallery">
                 
                     <h2>Video Gallery</h2>
                     
@@ -267,15 +329,15 @@
             
             <aside class="rightWell map">
             
-                <div class="geo">
+                <section class="geo">
                     <!-- Microformats tag -->
-                    <img src="images/map.png" alt="geo" />
+                    <img src="images/dummyMap.png" alt="geo" />
                     <span class="latitude">39.56608</span>
                     <span class="longitude">-104.87848</span>
                     <p><a href="#">Directions</a> |  &nbsp;<a href="#">View Large Map</a>  |  &nbsp;<a href="#">Street View</a></p>
-                </div>
+                </section>
             
-                <section class="photoPreviews">
+                <section id="photoPreviews">
                 
                     <h2>Photos (10)</h2>
                     
@@ -364,8 +426,8 @@
     					<li><a data-pagezone="x.ft.nav.adv" href="http://www.dexone.com/" rel="nofollow">Advertise</a></li>
     					<li><a data-pagezone="x.ft.nav.ma" href="https://account.dexknows.com/login.jsp" rel="nofollow">Advertiser Login</a></li>
     					<li><a data-pagezone="x.ft.nav.pybo" href="https://www.dexebill.com/" rel="nofollow">Pay Bill</a></li>
-    					<li><a data-pagezone="x.ft.nav.cu" href="http://www.dexknows.com.localhost/info/contactUs.asp" rel="nofollow">Contact Us</a></li>
-    					<li><a data-pagezone="x.ft.nav.ft" href="http://www.dexknows.com.localhost/info/freeTools.asp" rel="nofollow">Free Tools</a></li>
+    					<li><a data-pagezone="x.ft.nav.cu" href="http://www.dexknows.com/info/contactUs.asp" rel="nofollow">Contact Us</a></li>
+    					<li><a data-pagezone="x.ft.nav.ft" href="http://www.dexknows.com/info/freeTools.asp" rel="nofollow">Free Tools</a></li>
     					<li><a data-pagezone="x.ft.nav.ft" href="http://www.youtube.com/user/DexAdvertising?feature=mhee" rel="nofollow">Dex Commercials</a></li>
     					<li><a data-pagezone="x.ft.nav.rec" href="http://green.dexknows.com/" rel="nofollow">Recycle</a></li>
     					<li><a data-pagezone="x.ft.nav.syd" href="http://green.dexknows.com/DexGreen/selectDexAction.do" rel="nofollow">Select Your Dex</a></li>
@@ -382,24 +444,24 @@
     				
     				<ul class="first">
     				
-    					<li><a title="Albuquerque, New Mexico" href="http://www.dexknows.com.localhost/geo/c-albuquerque-nm/">Albuquerque</a></li>
-    					<li><a title="Boise, Idaho" href="http://www.dexknows.com.localhost/geo/c-boise-id/">Boise</a></li>
-    					<li><a title="Chicago, Illinois" href="http://www.dexknows.com.localhost/geo/c-chicago-il/">Chicago</a></li>
-    					<li><a title="Colorado Springs, Colorado" href="http://www.dexknows.com.localhost/geo/c-colorado_springs-co/">Colorado Springs</a></li>
-    					<li><a title="Denver, Colorado" href="http://www.dexknows.com.localhost/geo/c-denver-co/">Denver</a></li>
-    					<li><a title="Des Moines, Iowa" href="http://www.dexknows.com.localhost/geo/c-des_moines-ia/">Des Moines</a></li>
-    					<li><a title="Fayetteville, North Carolina" href="http://www.dexknows.com.localhost/geo/c-fayetteville-nc/">Fayetteville</a></li>
-    					<li><a title="Las Vegas, Nevada" href="http://www.dexknows.com.localhost/geo/c-las_vegas-nv/">Las Vegas</a></li>
+    					<li><a title="Albuquerque, New Mexico" href="http://www.dexknows.com/geo/c-albuquerque-nm/">Albuquerque</a></li>
+    					<li><a title="Boise, Idaho" href="http://www.dexknows.com/geo/c-boise-id/">Boise</a></li>
+    					<li><a title="Chicago, Illinois" href="http://www.dexknows.com/geo/c-chicago-il/">Chicago</a></li>
+    					<li><a title="Colorado Springs, Colorado" href="http://www.dexknows.com/geo/c-colorado_springs-co/">Colorado Springs</a></li>
+    					<li><a title="Denver, Colorado" href="http://www.dexknows.com/geo/c-denver-co/">Denver</a></li>
+    					<li><a title="Des Moines, Iowa" href="http://www.dexknows.com/geo/c-des_moines-ia/">Des Moines</a></li>
+    					<li><a title="Fayetteville, North Carolina" href="http://www.dexknows.com/geo/c-fayetteville-nc/">Fayetteville</a></li>
+    					<li><a title="Las Vegas, Nevada" href="http://www.dexknows.com/geo/c-las_vegas-nv/">Las Vegas</a></li>
     					<li><a title="Minneapolis, Minnesota" href="/geo/c-minneapolis-mn/">Minneapolis</a></li>
-    					<li><a title="Omaha, Nebraska" href="http://www.dexknows.com.localhost/geo/c-omaha-ne/">Omaha</a></li>
-    					<li><a title="Orlando, Florida" href="http://www.dexknows.com.localhost/geo/c-orlando-fl/">Orlando</a></li>
-    					<li><a title="Phoenix, Arizona" href="http://www.dexknows.com.localhost/geo/c-phoenix-az/">Phoenix</a></li>
-    					<li><a title="Portland, Oregon" href="http://www.dexknows.com.localhost/geo/c-portland-or/">Portland</a></li>
-    					<li><a title="Salt Lake City, Utah" href="http://www.dexknows.com.localhost/geo/c-salt_lake_city-ut/">Salt Lake City</a></li>
-    					<li><a title="Seattle, Washington" href="http://www.dexknows.com.localhost/geo/c-seattle-wa/">Seattle</a></li>
-    					<li><a title="St. Paul, Minnesota" href="http://www.dexknows.com.localhost/geo/c-saint_paul-mn/">St. Paul</a></li>
-    					<li><a title="Tacoma, Washington" href="http://www.dexknows.com.localhost/geo/c-tacoma-wa/">Tacoma</a></li>
-    					<li><a title="Tucson, Arizona" href="http://www.dexknows.com.localhost/geo/c-tucson-az/">Tucson</a></li>
+    					<li><a title="Omaha, Nebraska" href="http://www.dexknows.com/geo/c-omaha-ne/">Omaha</a></li>
+    					<li><a title="Orlando, Florida" href="http://www.dexknows.com/geo/c-orlando-fl/">Orlando</a></li>
+    					<li><a title="Phoenix, Arizona" href="http://www.dexknows.com/geo/c-phoenix-az/">Phoenix</a></li>
+    					<li><a title="Portland, Oregon" href="http://www.dexknows.com/geo/c-portland-or/">Portland</a></li>
+    					<li><a title="Salt Lake City, Utah" href="http://www.dexknows.com/geo/c-salt_lake_city-ut/">Salt Lake City</a></li>
+    					<li><a title="Seattle, Washington" href="http://www.dexknows.com/geo/c-seattle-wa/">Seattle</a></li>
+    					<li><a title="St. Paul, Minnesota" href="http://www.dexknows.com/geo/c-saint_paul-mn/">St. Paul</a></li>
+    					<li><a title="Tacoma, Washington" href="http://www.dexknows.com/geo/c-tacoma-wa/">Tacoma</a></li>
+    					<li><a title="Tucson, Arizona" href="http://www.dexknows.com/geo/c-tucson-az/">Tucson</a></li>
     					
     				</ul>
     				
@@ -411,24 +473,24 @@
     				
     				<ul class="first">
     				
-    					<li><a title="Attorneys" href="http://www.dexknows.com.localhost/local/law/lawyers/general_practice_lawyers/geo/c%2Dchicago%2Dil/">Attorneys</a></li>
-    					<li><a title="Auto Parts" href="http://www.dexknows.com.localhost/local/automotive/vehicle_service_and_repair/auto_parts/geo/c%2Dchicago%2Dil/">Auto Parts</a></li>
-    					<li><a title="Auto Repair" href="http://www.dexknows.com.localhost/local/automotive/vehicle_service_and_repair/general_auto_service/geo/c%2Dchicago%2Dil/">Auto Repair</a></li>
-    					<li><a title="Chiropractors" href="http://www.dexknows.com.localhost/local/health_care/alternative_health_care/chiropractors/geo/c%2Dchicago%2Dil/">Chiropractors</a></li>
-    					<li><a title="Cleaning Services" href="http://www.dexknows.com.localhost/local/real_estate/facilities_management/cleaning_services/geo/c%2Dchicago%2Dil/">Cleaning Services</a></li>
-    					<li><a title="Counseling" href="http://www.dexknows.com.localhost/local/health_care/health_care_services/counseling/geo/c%2Dchicago%2Dil/">Counseling</a></li>
-    					<li><a title="Dentists" href="http://www.dexknows.com.localhost/local/health_care/dentistry/general_dentists/geo/c%2Dchicago%2Dil/">Dentists</a></li>
-    					<li><a title="General Contractors" href="http://www.dexknows.com.localhost/local/construction/contractors/general_contractors/geo/c%2Dchicago%2Dil/">General Contractors</a></li>
-    					<li><a title="Hotels and Lodging" href="http://www.dexknows.com.localhost/local/travel_and_tourism/hotels_and_lodging/geo/c%2Dchicago%2Dil/">Hotels and Lodging</a></li>
-    					<li><a title="HVAC Contractors" href="http://www.dexknows.com.localhost/local/construction/contractors/hvac_contractors/geo/c%2Dchicago%2Dil/">HVAC Contractors</a></li>
-    					<li><a title="Insurance Agents and Brokers" href="http://www.dexknows.com.localhost/local/finance/insurance/insurance_agents_and_brokers/geo/c%2Dchicago%2Dil/">Insurance Agents and Brokers</a></li>
-    					<li><a title="Landscape Contractors" href="http://www.dexknows.com.localhost/local/construction/contractors/landscape_contractors/geo/c%2Dchicago%2Dil/">Landscape Contractors</a></li>
-    					<li><a title="Plumbers" href="http://www.dexknows.com.localhost/local/construction/contractors/plumbers/geo/c%2Dchicago%2Dil/">Plumbers</a></li>
-    					<li><a title="Primary Care" href="http://www.dexknows.com.localhost/local/health_care/doctors/general_practitioners/geo/c%2Dchicago%2Dil/">Primary Care</a></li>
-    					<li><a title="Restaurants" href="http://www.dexknows.com.localhost/local/food_and_beverage/restaurants/geo/c%2Dchicago%2Dil/">Restaurants</a></li>
-    					<li><a title="Roofers" href="http://www.dexknows.com.localhost/local/construction/contractors/roofers/geo/c%2Dchicago%2Dil/">Roofers</a></li>
-    					<li><a title="Storage" href="http://www.dexknows.com.localhost/local/transportation/storage/geo/c%2Dchicago%2Dil/">Storage</a></li>
-    					<li><a title="Veterinarians" href="http://www.dexknows.com.localhost/local/pets/veterinarians/geo/c%2Dchicago%2Dil/">Veterinarians</a></li>
+    					<li><a title="Attorneys" href="http://www.dexknows.com/local/law/lawyers/general_practice_lawyers/geo/c%2Dchicago%2Dil/">Attorneys</a></li>
+    					<li><a title="Auto Parts" href="http://www.dexknows.com/local/automotive/vehicle_service_and_repair/auto_parts/geo/c%2Dchicago%2Dil/">Auto Parts</a></li>
+    					<li><a title="Auto Repair" href="http://www.dexknows.com/local/automotive/vehicle_service_and_repair/general_auto_service/geo/c%2Dchicago%2Dil/">Auto Repair</a></li>
+    					<li><a title="Chiropractors" href="http://www.dexknows.com/local/health_care/alternative_health_care/chiropractors/geo/c%2Dchicago%2Dil/">Chiropractors</a></li>
+    					<li><a title="Cleaning Services" href="http://www.dexknows.com/local/real_estate/facilities_management/cleaning_services/geo/c%2Dchicago%2Dil/">Cleaning Services</a></li>
+    					<li><a title="Counseling" href="http://www.dexknows.com/local/health_care/health_care_services/counseling/geo/c%2Dchicago%2Dil/">Counseling</a></li>
+    					<li><a title="Dentists" href="http://www.dexknows.com/local/health_care/dentistry/general_dentists/geo/c%2Dchicago%2Dil/">Dentists</a></li>
+    					<li><a title="General Contractors" href="http://www.dexknows.com/local/construction/contractors/general_contractors/geo/c%2Dchicago%2Dil/">General Contractors</a></li>
+    					<li><a title="Hotels and Lodging" href="http://www.dexknows.com/local/travel_and_tourism/hotels_and_lodging/geo/c%2Dchicago%2Dil/">Hotels and Lodging</a></li>
+    					<li><a title="HVAC Contractors" href="http://www.dexknows.com/local/construction/contractors/hvac_contractors/geo/c%2Dchicago%2Dil/">HVAC Contractors</a></li>
+    					<li><a title="Insurance Agents and Brokers" href="http://www.dexknows.com/local/finance/insurance/insurance_agents_and_brokers/geo/c%2Dchicago%2Dil/">Insurance Agents and Brokers</a></li>
+    					<li><a title="Landscape Contractors" href="http://www.dexknows.com/local/construction/contractors/landscape_contractors/geo/c%2Dchicago%2Dil/">Landscape Contractors</a></li>
+    					<li><a title="Plumbers" href="http://www.dexknows.com/local/construction/contractors/plumbers/geo/c%2Dchicago%2Dil/">Plumbers</a></li>
+    					<li><a title="Primary Care" href="http://www.dexknows.com/local/health_care/doctors/general_practitioners/geo/c%2Dchicago%2Dil/">Primary Care</a></li>
+    					<li><a title="Restaurants" href="http://www.dexknows.com/local/food_and_beverage/restaurants/geo/c%2Dchicago%2Dil/">Restaurants</a></li>
+    					<li><a title="Roofers" href="http://www.dexknows.com/local/construction/contractors/roofers/geo/c%2Dchicago%2Dil/">Roofers</a></li>
+    					<li><a title="Storage" href="http://www.dexknows.com/local/transportation/storage/geo/c%2Dchicago%2Dil/">Storage</a></li>
+    					<li><a title="Veterinarians" href="http://www.dexknows.com/local/pets/veterinarians/geo/c%2Dchicago%2Dil/">Veterinarians</a></li>
     					
     				</ul>
     
@@ -443,15 +505,15 @@
     					<li><a data-pagezone="1.mw.dwnld.ip" href="http://itunes.apple.com/us/app/dexknows/id306021114?mt=8">Dex Mobile for iPhone</a></li>
     					<li><a data-pagezone="1.mw.dwnld.andr" href="https://play.google.com/store/apps/details?id=com.mportal.dexknows.ui">Dex Mobile for Android</a></li>
     					<li><a data-pagezone="1.gl.nav.loc" href="http://local.dexknows.com">DexKnows Tips</a></li>
-    					<li><a data-pagezone="1.gl.nav.hi" href="http://www.dexknows.com.localhost/local/home_improvement/">DexKnows Home Improvement</a></li>
-    					<li><a data-pagezone="1.gl.nav.wed" href="http://www.dexknows.com.localhost/local/weddings/">DexKnows Weddings</a></li>
+    					<li><a data-pagezone="1.gl.nav.hi" href="http://www.dexknows.com/local/home_improvement/">DexKnows Home Improvement</a></li>
+    					<li><a data-pagezone="1.gl.nav.wed" href="http://www.dexknows.com/local/weddings/">DexKnows Weddings</a></li>
     					<li><a data-pagezone="1.gl.nav.fb" href="http://www.facebook.com/dexknows">DexKnows on Facebook</a></li>
     					<li><a data-pagezone="1.gl.nav.tw" href="http://twitter.com/dexknows">DexKnows on Twitter</a></li>
                         
     					<li class="secondTitle">Local Searches</li>
-    					<li><a data-pagezone="x.ft.nav.yp" href="http://www.dexknows.com.localhost">Yellow Pages</a></li>
+    					<li><a data-pagezone="x.ft.nav.yp" href="http://www.dexknows.com">Yellow Pages</a></li>
     					<li><a data-pagezone="x.ft.nav.wp" href="http://dexknows.whitepages.com" rel="nofollow">White Pages</a></li>
-    					<li><a data-pagezone="x.ft.nav.browse" href="http://www.dexknows.com.localhost/browse-directory.asp">Local Business Directory</a></li>
+    					<li><a data-pagezone="x.ft.nav.browse" href="http://www.dexknows.com/browse-directory.asp">Local Business Directory</a></li>
     					
     				</ul>
     				

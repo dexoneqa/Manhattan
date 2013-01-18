@@ -30,6 +30,50 @@ img.businessRating {
 	padding: 0;
 }
 
+.globalBar { position:relative; z-index:2; margin:0px 0px 35px 0px; border-bottom:1px solid #ececec; background:#fafafa;}
+ul.quickLinks {width:110px; white-space:nowrap; list-style: none}
+.quickLinks li { float:right; padding:0px 8px 0px 8px; white-space:nowrap; border-right:1px solid #dfdfdf; }
+.quickLinks .last { border-right:none; }
+.quickLinks a { color:#1d8bfc; font-size:14px; font-weight:bold; white-space:nowrap; }
+.quickLinks a:active { color:#424242; }
+.quickLinks .userDropDown { width:auto; position:relative; text-align:left;	}
+
+.quickLinks .userDropDownList {
+	background-color: #fff;
+	border-bottom:1px solid #e8e8e8;
+	border-left:1px solid #e8e8e8;
+	border-right:1px solid #e8e8e8;
+	position:absolute;
+	top: 20px;
+	left: 33px;
+	z-index:1;
+}
+
+.quickLinks .userDropDownList li { padding:8px 0px 12px 5px; width:auto; float:none; background:white; border: none;}
+.quickLinks .userDropDownList li a { font-weight: normal; color: #000; }
+.quickLinks .userDropDownList li:hover {background:#e4e2e1;}
+.quickLinks .userDropDownList li a:hover {text-decoration:none; color:#000;}
+
+#userDropDownLink { 
+	background-color: transparent;
+	background-image: url(../images/btn_dropdown.png);
+	background-position: right 2px;
+	background-repeat: no-repeat;
+	display: inline-block;
+	margin: 5px 15px 0 auto;
+	padding-right: 15px;
+	text-align: right;
+	width: 100%;
+}
+
+li#userDropDown > ul {
+	display:none;
+}
+
+li#userDropDown:hover > ul {
+	display:block;
+}
+
 /* Global Page Arch */
 div.globalArch {
 	background: rgb(255,255,255); /* Old browsers */
@@ -93,17 +137,17 @@ input.globalSearch.inputText {
 	color: #000;
 	font-size:14px;
 	font-weight: normal;
-	margin: 5px 0 5px 5px;
+	margin: 5px 2px 5px 5px;
 }
 
 input.globalSearch.inputText.what {
-	background: #fff url("http://images.dexknows.com.localhost/desktop/images/globalSearchWhat.png") 10px no-repeat;
+	background: #fff url("http://images.dexknows.com/desktop/images/globalSearchWhat.png") 10px no-repeat;
 	padding: 0 0 0 52px;
 	width: 208px;
 }
 
 input.globalSearch.inputText.where {
-	background:#fff url("http://images.dexknows.com.localhost/desktop/images/globalSearchWhere.png") 10px no-repeat;
+	background:#fff url("http://images.dexknows.com/desktop/images/globalSearchWhere.png") 10px no-repeat;
 	padding: 0 0 0 60px;
 	width: 200px;
 }
@@ -127,7 +171,7 @@ input.globalSearch.inputButton {
 	font-weight:bold;
 	font-size: 18px;
 	height: 40px;
-	margin: 22px 0;
+	margin: 4px 5px 0;
 	padding: 0;
 	width: 118px;
 	cursor: pointer;
@@ -159,6 +203,19 @@ input.globalSearch.inputButton:active {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2258bf', endColorstr='#3a94d6',GradientType=0 ); /* IE6-8 */
 }
 
+.dropdown {
+ 	position: fixed;
+	top: 46px;
+	text-align: center;
+	width:100%;
+	z-index: 50;
+}
+
+.dropdown > .quickLinks {
+	margin: -30px auto 0;
+	width:980px;
+}
+
 div.superStructure {
 	box-shadow: 0 4px 10px #ccc;
 	-moz-box-shadow: 0 4px 10px #ccc;
@@ -173,7 +230,7 @@ div.superStructure > aside {
 
 div.superStructure > article.leftWell {
     margin: 0 10px 0 0;
-	width: 61%;
+	width: 660px;
 }
 
 div.superStructure > article > section {
@@ -183,7 +240,7 @@ div.superStructure > article > section {
     
 
 div.superStructure > aside.rightWell {
-    width: 37%;
+    width: 300px;
 }
 
 div.module.template {
