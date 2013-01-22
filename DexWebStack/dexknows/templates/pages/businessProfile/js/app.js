@@ -92,11 +92,9 @@ requirejs(
                 shareCouponDescription = 'I found coupons for Le Colonial on dexknows.com and thought you might want to check it out. Find business information, reviews, maps, coupons, driving directions and more.', 
                 businessname = 'Le Colonial', 
                 shareCouponDescription = 'I found coupons for Le Colonial on dexknows.com and thought you might want to check it out. Find business information, reviews, maps, coupons, driving directions and more.', 
-                targetSite = "http://dexwebstack";
-
-                /*global targetSite */
-                /*global gigyaAPIKey */
-                var conf = {
+                targetSite = "http://dexwebstack", 
+                
+                conf = {
                         APIKey: gigyaAPIKey,
                         enabledProviders: 'facebook,google,yahoo,twitter,aol,messenger'
                     }, 
