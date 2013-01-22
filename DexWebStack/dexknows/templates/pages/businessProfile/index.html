@@ -99,7 +99,7 @@
 	
 		<div class="superStructure">
 		
-    		<article class="leftWell">
+    		<div class="leftWell article">
     			
     			<header class="businessProfile vcard">
     			
@@ -317,10 +317,28 @@
                     
                 </section>
 
-			</article><!-- // .leftWell -->
+			</div><!-- // .leftWell -->
             
-            <aside class="rightWell map">
+            <div class="rightWell aside">
             
+        		<ul class="pagePromote">
+        	       
+        			<li class="userOptions columnOne addToFav">
+                        
+                        <a class="addToFav" href="#">Save as Favorite</a>
+                        
+                    </li>
+        	
+        			<li class="userOptions columnTwo">Share:</li>
+                    
+        			<li class="userOptions columnThree">
+                    
+                        <div class="shareButtons" id="gigyaShareBarButtons"></div>
+                    
+                    </li>
+                    
+        		</ul><!-- // .rightWell .aside -->
+    
                 <section class="geo">
                     <!-- Microformats tag -->
                     <img src="images/dummyMap.png" alt="geo" />
@@ -400,7 +418,7 @@
                     
                 </section>
 
-            </aside><!-- // .rightWell -->
+            </div><!-- // .rightWell -->
 			
 		</div><!-- // .superStructure -->
 		
@@ -524,8 +542,12 @@
             
         </div><!--  // .footerContainer -->
         
-        <script src="http://player.ooyala.com/player.js?width=435&height=256&embedCode=YxcmxrMjp258WhErOOmETiKnbRWnnfHy&wmode=transparent"></script>
+        <script type="text/javascript">
+
+        	window.console.log("First!");
         
+        </script>
+
         <!--
         This sets the baseUrl to the "scripts" directory, and
         loads a script that will have a module ID of 'app'

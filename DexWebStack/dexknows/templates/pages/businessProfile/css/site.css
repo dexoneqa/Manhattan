@@ -75,7 +75,7 @@ li#userDropDown:hover > ul {
 }
 
 /* Global Page Arch */
-div.globalArch {
+.globalArch {
 	background: rgb(255,255,255); /* Old browsers */
 	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
 	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlOGU4ZTgiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
@@ -97,30 +97,30 @@ div.globalArch {
 	z-index: 50;
 }
 
-div.globalArch > div.globalBar, 
-div.superStructure, 
-footer {
+.globalArch > .globalBar, 
+.superStructure, 
+.footer {
     margin: auto;
     width: 980px;
 }
 
-div.globalArch > div.globalBar {
+.globalArch > .globalBar {
 	background: none;
 	border: none;
 	height: 50px;
 	margin: 0 auto;
 }
 
-div.globalArch > div.globalBar > div.logo, 
-div.globalArch > div.globalBar > div.globalSearch {
+.globalArch > .globalBar > .logo, 
+.globalArch > .globalBar > .globalSearch {
 	float: left;
 }
 
-div.globalArch > div.globalBar > div.logo {
+.globalArch > .globalBar > .logo {
 	margin: 13px 0;
 }
 
-div.globalArch > div.globalBar > div.globalSearch > form {
+.globalArch > .globalBar > .globalSearch > form {
 	margin: 0 0 0 10px;
 }
 
@@ -216,39 +216,101 @@ input.globalSearch.inputButton:active {
 	width:980px;
 }
 
-div.superStructure {
-	box-shadow: 0 4px 10px #ccc;
-	-moz-box-shadow: 0 4px 10px #ccc;
-	-webkit-box-shadow: 0 4px 10px #ccc;
+.superStructure {
 	margin: 0 auto 10px auto;
 }
 
-div.superStructure > article, 
-div.superStructure > aside {
-    float: left;
+.superStructure > .leftWell {
+	width: 620px;
 }
 
-div.superStructure > article.leftWell {
-    margin: 0 10px 0 0;
-	width: 660px;
+.superStructure > .article {
+    display: inline-block;
+    margin: 0;
 }
 
-div.superStructure > article > section {
+.superStructure > .article > .section {
     clear: both;
     width: 100%;    
 }
+
+.rightWell > .pagePromote {
+	display: block;
+	height: 20px;
+	list-style: none;
+	margin: 0 0 10px 0;
+	padding: 0;
+	width: 300px;
+}
+
+.rightWell > .pagePromote > .userOptions {
+	float: left;
+	font-size: 12px;
+	font-weight: bold;
+	height: 20px;
+	margin: auto;
+}
+
+.rightWell > .pagePromote > .userOptions.columnOne.addToFav {
+	background-image: url(../images/icons_sprite.png);
+	background-position: 0 -2780px;
+	background-repeat: no-repeat;
+	width: 120px;
+}
+
+.rightWell > .pagePromote > .userOptions.columnOne.addToFav:hover {
+	background-image: url(../images/icons_sprite.png);
+	background-position: 0 -2800px;
+	background-repeat: no-repeat;
+}
+
+.rightWell > .pagePromote > .userOptions.columnOne.addToFav > a {
+	color: #000 !important;
+}
+
+.rightWell > .pagePromote > .userOptions.columnOne.savedToFav > a {
+	color: #999 !important;
+}
+
+.rightWell > .pagePromote > .userOptions.columnOne.savedToFav {
+	background-image: url(../images/icons_sprite.png);
+	background-position: 0 -2521px;
+	background-repeat: no-repeat;
+}
+
+.rightWell > .pagePromote > .userOptions.columnOne > a {
+	color: #000;
+	font-weight: bold;
+	text-decoration: none;
+	margin: 0 0 0 24px;
+}
+
+.rightWell > .pagePromote > .userOptions.columnTwo {
+	margin: 1px 6px 0 25px;
+}
+
+.rightWell > .pagePromote > .userOptions.columnThree {
+	width: 100px;
+}
+
+.rightWell > .pagePromote > .userOptions.columnThree > div.shareButtons {
+	float: left;
+}
+
     
 
-div.superStructure > aside.rightWell {
+.superStructure > .rightWell {
+    display: inline-block;
+    margin: 0 0 0 55px;
     width: 300px;
 }
 
-div.module.template {
+.module.template {
 	margin: 10px;
 }
 
 /* Global Page Footer */
-div.footerContainer {
+.footerContainer {
     background-color: #f5f3f1;
     border-top: 1px solid #d9d9d9;
     clear: both;
@@ -256,68 +318,68 @@ div.footerContainer {
     width: 100%;
 }
 
-footer {
+.footer {
     margin: auto;
 }
 
-footer > section {
+.footer > section {
     display: inline-table;
 }
 
-footer > section.column {
+.footer > section.column {
     border-right: 1px solid #d9d9d9;
     margin: 10px;
     width: 22%;
 }
 
-footer > section.column.last {
+.footer > section.column.last {
     border-right: none;
 }
 
-footer > section.legal {
+.footer > section.legal {
     text-align: center;
     width: 100%;
 }
 
-footer > section.legal > p.copy {
+.footer > section.legal > p.copy {
     color: #7f7f7f;
 }
 
-footer > section.legal > p.copy > a {
+.footer > section.legal > p.copy > a {
     color: #06C;
     font-size: 12px;
     font-weight: bold;
 }
 
-footer > section > h5 {
+.footer > section > h5 {
     font-size: 20px;
     font-weight: normal;
     margin: 0 auto 10px;
 }
 
-footer > section > h5 > a {
+.footer > section > h5 > a {
     color: #666;
 }
 
-footer > section > ul {
+.footer > section > ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-footer > section > ul > li {
+.footer > section > ul > li {
     font-size: 12px;
     margin-top: 5px;
 }
 
-footer > section > ul > li.secondTitle {
+.footer > section > ul > li.secondTitle {
     color: #666;
     font-size: 13px;
     font-weight: bold;
     margin: 15px 0 5px 0;
 }
 
-footer > section > ul > li > a {
+.footer > section > ul > li > a {
     color: #797e7e;
 }
 
@@ -325,7 +387,7 @@ footer > section > ul > li > a {
  * Dialogue user interface module
  **********************************************************/
 
-div.blackOverlay {
+.blackOverlay {
 	display: none;
 	position: fixed;
 	top: 0;
@@ -339,7 +401,7 @@ div.blackOverlay {
 	filter: alpha(opacity=80);
 }
  
-div.litContent {
+.litContent {
 	background: transparent;
 	position: absolute;
 	margin-left:-330px;
@@ -349,7 +411,7 @@ div.litContent {
 	left: 50%;
 }
 
-div.dialogueRoot {
+.dialogueRoot {
 	background: #fff;
 	border: #ccc 1px solid;
 	font-family: helvetica, verdana, tahoma, arial, "sans-serif";
@@ -357,7 +419,7 @@ div.dialogueRoot {
 	width: 675px;
 }
 
-div.closeButton {
+.closeButton {
 	background: url("../images/closeButton.png") no-repeat;
 	cursor: pointer;
 	height:32px;
@@ -367,13 +429,13 @@ div.closeButton {
 	width:32px;
 }
 
-div.dialogueRoot > div.dialogueHeading {
+.dialogueRoot > .dialogueHeading {
 	background-color: #f9f9f9;
 	border-bottom: solid 1px #d6d6d6;
 	height: 47px;
 }
 
-div.dialogueRoot > div.dialogueHeading > div.dialogueTitle {
+.dialogueRoot > .dialogueHeading > .dialogueTitle {
 	color: #666;
 	font-size: 24px;
 	font-weight: bold;
@@ -384,49 +446,49 @@ span.notBold {
 	font-weight: normal;
 }
 
-div.corneredTop {
+.corneredTop {
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
 }
 
-div.corneredBottom {
+.corneredBottom {
 	border-bottom-left-radius: 5px;
 	border-bottom-right-radius: 5px;
 }
 
-div.dialogueRoot > div.ruleCaption {
+.dialogueRoot > .ruleCaption {
     text-align: center;
 }
 
-div.dialogueRoot > div.ruleCaption > div > p.callUs, 
-div.dialogueRoot > div.ruleCaption > div > p.tagLine {
+.dialogueRoot > .ruleCaption > div > p.callUs, 
+.dialogueRoot > .ruleCaption > div > p.tagLine {
     font-weight: bold;
 }
 
-div.dialogueRoot > div.ruleCaption > div > p.callUs {
+.dialogueRoot > .ruleCaption > div > p.callUs {
     font-size: 24px;
     line-height: 85px;
 }
 
-div.dialogueRoot > div.ruleCaption > div > p.tagLine {
+.dialogueRoot > .ruleCaption > div > p.tagLine {
     font-size: 18px;
 }
 
-div.dialogueRoot > div.ruleCaption > div.breakout {
+.dialogueRoot > .ruleCaption > .breakout {
     margin-top: 25px;
 }
 
-div.dialogueRoot > div.ruleCaption > div.breakout > img {
+.dialogueRoot > .ruleCaption > .breakout > img {
     margin-left: 20px;
 }
 
-div.dialogueRoot > div.ruleCaption > div.breakout > ul {
+.dialogueRoot > .ruleCaption > .breakout > ul {
     float: right;
     width: 45%;
     padding-left: 0px;
 }
 
-div.dialogueRoot > div.ruleCaption > div.breakout > ul > li {
+.dialogueRoot > .ruleCaption > .breakout > ul > li {
     font-size: 14px;
     margin: 20px auto;
     text-align: left;
