@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+
+	<head>
+
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+		
+		<title>Business Header Module</title>
+		
+		<!-- This style block is used just for the module template. -->
+		<!-- It is not meant to be used in a production environment. -->
+		
+		<style type="text/css">
+		
+			body > div.leftRailPlaceholder {
+				border: solid black 1px;
+				margin: auto;
+				width: 384px;
+			}
+			
+		</style>
+		
+		<!--[if lt IE 9]>
+		<link href="style-ie.css" type="text/css" rel="stylesheet"></link>
+		<![endif]-->
+		
+		<link href="style.css" type="text/css" rel="stylesheet"></link>
+		
+	</head>
+
+	<body>
+	
+		<div class="rightRailPlaceholder">
+			
+            <div class="shareButtons" id="gigyaShareBarButtons"></div>
+            	
+		</div><!-- // .leftRailPlaceholder -->
+        
+        <!--
+        This sets the baseUrl to the "scripts" directory, and
+        loads a script that will have a module ID of 'main'
+        -->
+        
+        <script data-main="js/app.js" src="js/lib/require.js"></script>
+
+	</body>
+	
+</html>

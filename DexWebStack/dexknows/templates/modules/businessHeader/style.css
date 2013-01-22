@@ -1,0 +1,186 @@
+@CHARSET "UTF-8";
+
+/*******************************************************************************
+ * The business profile pages that are going to be holding the names of 
+ * all the places that have the things that we need for the header.
+ ******************************************************************************/
+ 
+div.businessProfile {
+	color: #000;
+	font-family: Tahoma, Verdana, Arial, 'sans-serif';
+	margin: 10px;
+	text-align: left;
+}
+
+div.businessProfile a, 
+div.businessProfile a:hover {
+	text-decoration: none;
+}
+
+header > h1.businessName {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+header > h1, 
+header > h3, 
+header > p {
+	margin: 2px 0;
+}
+
+header > p.businessSlogan, 
+header > h3.businessAddress {
+	font-size: 14px;
+}
+
+header > h3.businessAddress {
+	font-weight: bold;
+}
+
+header > p.businessWebsite > a {
+	color: #1b75bc;
+	font-size: 12px;
+}
+
+header > p.businessTelephone {
+	font-size: 26px;
+	font-weight: bold;
+	margin: 6px 0;
+}
+
+header > div {
+	margin: 10px auto;
+}
+
+header > div > img.businessRating {
+	background: url(http://images.dexknows.com.localhost/desktop/images/icons_sprite.png) 0 -779px no-repeat;
+}
+
+header > div > span.claimBusiness {
+	border-left: solid #dad9d9 1px;
+	margin-left: 10px;
+	padding-left: 10px;
+	font-size: 12px;
+}
+
+header > nav {
+	display: inline-block;
+	width: 100%;
+}
+
+header > nav > ul.profileTools {
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+header > nav > ul.profileTools > li {
+	border-right: solid #dad9d9 1px;
+    float: left;
+    list-style: none;
+}
+
+header > nav > ul.profileTools > li.first {
+	padding: 0 5px 0 0;
+}
+
+header > nav > ul.profileTools > li.last {
+	border-right: none;
+	padding: 0 0 0 5px;
+}
+
+header > nav > ul.profileTools > li, 
+header > nav > ul.profileTools > li.follow > a {
+	padding: 0 5px;
+}
+    
+header > nav > ul.profileTools > li > a, 
+header > nav > ul.profileTools > li > span.annotation {
+	color: #676767;
+	float: left;
+	font-size: 11px;
+	line-height: 24px;
+}
+
+header > nav > ul.profileTools > li > a {
+	background: url(http://images.dexknows.com.localhost/desktop/images/icons_sprite.png);
+	background-repeat: no-repeat;
+	height: 22px;
+	overflow: hidden;
+}
+
+header > nav > ul.profileTools > li > a:hover {
+	color: #000;
+}
+
+header > nav > ul.profileTools > li.website > a {
+	background-position: 0 -2819px;
+	padding: 0 0 0 25px;
+}
+
+header > nav > ul.profileTools > li.website > a:hover {
+	background-position: 0 -2839px;
+}
+
+header > nav > ul.profileTools > li.follow {
+	text-transform: capitalize;
+}
+
+header > nav > ul.profileTools > li.follow > a {
+	float: left;
+	margin: 0 0 0 5px;
+	padding: 0 0 0 19px;
+	width: 0;
+}
+
+header > nav > ul.profileTools > li.follow > a.facebookLink {
+	background-position: 0 -2859px;
+}
+
+header > nav > ul.profileTools > li.follow > a.facebookLink:hover {
+	background-position: 0 -2879px;
+}
+
+header > nav > ul.profileTools > li.follow > a.twitterLink {
+	background-position: 0 -2902px;
+}
+
+header > nav > ul.profileTools > li.follow > a.twitterLink:hover {
+	background-position: 0 -2924px;
+}
+
+header > nav > ul.profileTools > li.email > a {
+	background-position: 0 -3076px;
+	padding: 0 0 0 34px;
+}
+
+header > nav > ul.profileTools > li.email > a:hover {
+	background-position: 0 -3096px;
+}
+
+header > nav > ul.profileTools > li.reserve > a {
+	background-position: 0 -2992px;
+	padding: 0 0 0 26px;
+}
+
+header > nav > ul.profileTools > li.reserve > a:hover {
+	background-position: 0 -3015px;
+}
+
+header > nav > ul.profileTools > li.menu > a {
+	background-position: 0 -2947px;
+	padding: 0 0 0 21px;
+}
+
+header > nav > ul.profileTools > li.menu > a:hover {
+	background-position: 0 -2969px;
+}
+
+header > nav > ul.profileTools > li.smsContact > a {
+	background-position: 0 -3036px;
+	padding: 0 0 0 25px;
+}
+
+header > nav > ul.profileTools > li.smsContact > a:hover {
+	background-position: 0  -3056px;
+}
