@@ -239,12 +239,10 @@
     padding: 0;
 }
 
-<<<<<<< HEAD
-=======
+
 #photoPreviews > ul > li {
 }
 
->>>>>>> branch 'master' of https://github.com/Socktan/Manhattan.git
 #photoPreviews > ul > li {
     height: 90px;
     float: left;
