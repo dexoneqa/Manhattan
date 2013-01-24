@@ -15,7 +15,6 @@ requirejs.config({
 });
 
 
-
 // Start the main app logic.
 requirejs(
         [
@@ -25,7 +24,7 @@ requirejs(
         function (dexlib, photoGallery) {
             
             $(document).ready(function () {
-
+                
                 var myGallery = new DEXO.gui.gallery();
                 
                 myGallery.create();

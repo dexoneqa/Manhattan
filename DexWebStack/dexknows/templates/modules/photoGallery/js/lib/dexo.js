@@ -638,10 +638,10 @@ if (typeof DEXO === "undefined") {
         this.selectors = {
 
             /**
-             * @property {String} viewFinder
+             * @property {String} viewfinder
              */
 
-            self: ".photoGallery > .viewFinder ",
+            self: ".photoGallery > .viewfinder ",
 
             /**
              * @property {String} nav Access the navigation controlss.
@@ -653,19 +653,19 @@ if (typeof DEXO === "undefined") {
                  * @property {String} previous The control element to move backwards through the gallery. 
                  */
 
-                goBack: ".photoGallery > .viewFinder > .controls > .previous",
+                goBack: ".photoGallery > .viewfinder > .controls > .previous",
 
                 /**
                  * @property {String} next The control element move forwards through the gallery.
                  */
 
-                goForward: ".photoGallery > .viewFinder > .controls > .next",
+                goForward: ".photoGallery > .viewfinder > .controls > .next",
 
                 /** 
                  * @property {String} controls Both control elements. 
                  */
 
-                controls: ".photoGallery > .viewFinder > .controls"
+                controls: ".photoGallery > .viewfinder > .controls"
             },
 
             /**
@@ -678,38 +678,38 @@ if (typeof DEXO === "undefined") {
                  * @property {String} display The display for the View Finder.
                  */
 
-                display: ".photoGallery > .viewFinder > .display",
+                display: ".photoGallery > .viewfinder > .display",
 
                 /**
                  * @property {String} all All the media in the gallery
                  */
 
-                all: ".photoGallery > .viewFinder > .display > a",
+                all: ".photoGallery > .viewfinder > .display > a",
 
                 /** 
                  * @property {String} selected The wrapper for the currently displayed media asset.
                  */
 
-                selected: ".photoGallery > .viewFinder > .display > a.selected",
+                selected: ".photoGallery > .viewfinder > .display > a.selected",
 
                 /**
                  * @property {String} selectedImage The currently displayed media asset.
                  */
 
-                selectedImage: ".photoGallery > .viewFinder > .display > a.selected > img",
+                selectedImage: ".photoGallery > .viewfinder > .display > a.selected > img",
 
                 /**
                  * @property {String} caption The caption for the displayed media asset.
                  */
 
-                caption: ".photoGallery > .viewFinder > .caption",
+                caption: ".photoGallery > .viewfinder > .caption",
 
                 /**
                  * @property {String} galleryIndex The text that indicates the current 
                  * position in the gallery.
                  */
 
-                galleryIndex: ".photoGallery > .viewFinder > .caption > .galleryIndex"
+                galleryIndex: ".photoGallery > .viewfinder > .caption > .galleryIndex"
             }
         };
     };
@@ -768,7 +768,7 @@ if (typeof DEXO === "undefined") {
 
         create: function() {
 
-            var myViewFinder = new Dex.gui.gallery.viewFinder();
+            var myViewFinder = new Dex.gui.gallery.viewfinder();
 
             myViewFinder.create();
 
@@ -780,7 +780,7 @@ if (typeof DEXO === "undefined") {
      * @constructor
      */
 
-    Dex.gui.gallery.viewFinder = function() {
+    Dex.gui.gallery.viewfinder = function() {
             
         /**
          * The horizontal and vertical dimensions of the view finder.
@@ -866,7 +866,7 @@ if (typeof DEXO === "undefined") {
             selectedImage = myGallery.selectors.media.selectedImage,
             imageHeight = $(selectedImage).height(),
             maximumHeight = this.dimensions.theHeight,
-            myViewFinder = new Dex.gui.gallery.viewFinder();
+            myViewFinder = new Dex.gui.gallery.viewfinder();
             
             if (imageHeight < 20 || imageHeight > maximumHeight) {
                  myViewFinder.adjust("height");
@@ -889,7 +889,7 @@ if (typeof DEXO === "undefined") {
              */
 
             var myGallery = new Dex.gui.gallery(),
-                myViewFinder = new Dex.gui.gallery.viewFinder(),
+                myViewFinder = new Dex.gui.gallery.viewfinder(),
                 selectors = myGallery.selectors;
 
             $(selectors.nav.goBack).click(function(event) {
@@ -912,7 +912,7 @@ if (typeof DEXO === "undefined") {
         };
     };
 
-    Dex.gui.gallery.viewFinder.prototype = {
+    Dex.gui.gallery.viewfinder.prototype = {
 
         /**
          * Instantiate the gallery widget on the page.

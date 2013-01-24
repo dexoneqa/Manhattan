@@ -25,7 +25,6 @@ requirejs(
          'http://cdn.gigya.com/js/socialize.js?apiKey=2_FYnHm3maZPs7YGHbzoN8mKjLHwkP834TcQAncOZ8aOwx6p8dutqMrDwCeFl7uWLr'
         ],  
         function ($, dexo, text, businessProfile, claimBusiness, ooyala, bigGigya) {
-         'http://player.dexknows.com/player.js?width=640&height=360&embedCode=5jbXhoNDo45BqOnr-FYIqC0T_lxN3b6t&wmode=transparent'
     
             var myDialogue = new DEXO.ui.dialogue();
             
@@ -41,7 +40,11 @@ requirejs(
                  * elements.
                  */
                 
-            
+                /**
+                 * Trigger for clicks on the "Claim Business" link.
+                 * @param {Event} event
+                 */
+                
                 $("a.claimBusiness").click(function (event) {
                     
                     event.preventDefault();
