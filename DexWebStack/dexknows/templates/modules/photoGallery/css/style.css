@@ -25,9 +25,14 @@ Module-specific definitions.
     width: 100%;
 }
 
+.photoGallery > h2.module {
+    margin: 0;
+}
+
 .photoGallery > .viewfinder > .controls {
     margin-top: 140px;
     position: absolute;
+    width: 660px;
     z-index: 100;
 }
 
@@ -64,16 +69,17 @@ Module-specific definitions.
 .photoGallery > .viewfinder > .controls > .linear > a.previous, 
 .photoGallery > .viewfinder > .controls > .linear > a.next {
     color: white;
+    text-align: center;
     text-transform: capitalize;
 }
 
 .photoGallery > .viewfinder {
-    position: aboslute;
-    clip: rect(0 50px 50px 0);
 }
 
 .photoGallery > .viewfinder > .display {
     height: 385px;
+    overflow: hidden;
+    text-align: center;
 }
 
 .photoGallery > .viewfinder > .display > a {
@@ -92,11 +98,56 @@ Module-specific definitions.
 }
 
 .photoGallery > .viewfinder > .caption {
-    background: #000;
     color: #fff;
     line-height: 24px;
-    margin-top: -27px;
+    text-align: center;
+    width: 660px;
+}
+
+.photoGallery > .viewfinder > .filmstrip {
+    clip: rect(0 660px 116px 0);
     position: absolute;
-    width: 615px;
-    z-index: 101;
+    height: 116px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.photoGallery > .viewfinder > .caption, 
+.photoGallery > .viewfinder > .filmstrip {
+    background-color: #000;
+    filter: alpha(opacity=80);
+    opacity: 0.8;
+}
+
+.photoGallery > .viewfinder > .filmstrip > .viewport {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.photoGallery > .viewfinder > .filmstrip > .viewport > .placeholder {
+    line-height: 90px;
+    float: left;
+    margin: 8px 6px;
+    width: 120px;
+}
+
+.photoGallery > .viewfinder > .filmstrip > .viewport > .placeholder > .frame {
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    display: block;
+    height: 90px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.photoGallery > .viewfinder > .filmstrip > .viewport > .placeholder > .selected {
+    border-color: yellow;
+}
+
+.photoGallery > .viewfinder > .filmstrip > .viewport > .placeholder > .frame > img {
+    vertical-align: middle;
+    width: 118px;
 }

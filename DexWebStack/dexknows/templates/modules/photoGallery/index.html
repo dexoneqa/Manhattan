@@ -1,19 +1,7 @@
 <!--[if IE]><![endif]-->
 <!doctype html>
 
-<!--[if IE 7]>
-
-<html class="no-js ie7 oldie" lang="en">
-
-<![endif]-->
-
-<!--[if IE 8]>
-
-<html class="no-js ie8 oldie" lang="en">
-
-<![endif]-->
-
-<html class="no-js" lang="en">
+<html lang="en">
 
     <head>
 
@@ -35,20 +23,19 @@
         
         <![endif]-->
         
-        <link href="http://cdn1.dxstatic.com/desktop/styles/dexcore-full.css?ver=2012-12-26-10" type="text/css" rel="stylesheet"></link>
- 
+        
         <!-- This style block is used just for the module template. -->
         
         <style type="text/css">
         
-            body {
+            .genericTemplatePage {
                 margin: 50px auto; 
             }
         
-            body > div.leftRailPlaceholder {
+            .genericTemplatePage > .leftRailPlaceholder {
                 border: solid black 1px;
                 margin: auto;
-                width: 615px;
+                width: 660px;
             }
             
         </style>
@@ -59,10 +46,6 @@
         
         <!--[if lt IE 9]>
         
-        <link rel="stylesheet" href="css/main.css" />
-        
-        <link rel="stylesheet" href="css/normalize.css" />
-        
         <script type="text/javascript" src="js/lib/html5shiv.js"></script>
         
         <![endif]-->
@@ -71,13 +54,13 @@
 
     </head>
 
-	<body>
+	<body class="genericTemplatePage">
 	
 		<div class="leftRailPlaceholder">
             
             <div class="photoGallery">
             
-                <h2>Photos (<span class="count">8</span>)</h2>
+                <h2 class="module">Photos (<span class="count">8</span>)</h2>
 
                 <div class="viewfinder">
                 
@@ -139,6 +122,34 @@
                             
                     </div><!-- // .display -->
                     
+                    <div class="filmstrip">
+                    
+                        <ul class="viewport">
+                            
+                            <li class="placeholder"><div class="frame selected"><img src="images/small/01.jpg" alt="FPO" /></div></li>
+                            
+                            <li class="placeholder"><div class="frame"><img src="images/small/02.jpg" alt="FPO" /></div></li>
+                        
+                            <li class="placeholder"><div class="frame"><img src="images/small/03.jpg" alt="FPO" /></div></li>
+                        
+                            <li class="placeholder"><div class="frame"><img src="images/small/04.jpg" alt="FPO" /></div></li>
+                        
+                            <li class="placeholder"><div class="frame"><img src="images/small/05.jpg" alt="FPO" /></div></li>
+                            
+                            <li class="placeholder"><div class="frame"><img src="images/small/06.jpg" alt="FPO" /></div></li>
+                            
+                            <li class="placeholder"><div class="frame"><img src="images/small/07.jpg" alt="FPO" /></div></li>
+                        
+                            <li class="placeholder"><div class="frame"><img src="images/small/08.jpg" alt="FPO" /></div></li>
+                        
+                            <li class="placeholder"><div class="frame"><img src="images/small/09.jpg" alt="FPO" /></div></li>
+                        
+                            <li class="placeholder"><div class="frame"><img src="images/small/10.jpg" alt="FPO" /></div></li>
+                        
+                        </ul><!-- // .viewport -->
+                    
+                    </div><!-- // .filmStrip -->
+                    
                     <div class="caption">
                     
                         Yellog Pages Ads - 2 of 18
@@ -146,74 +157,6 @@
                     </div><!-- // .caption -->
                     
                 </div><!-- // .viewfinder -->
-                
-                <div class="filmStrip">
-                
-                    <ul>
-                        
-                        <li>
-                        
-                            <img src="images/small/01.jpg" alt="FPO" />
-                        
-                        </li>
-                        
-                        <li>
-                        
-                            <img src="images/small/02.jpg" alt="FPO" />
-                        
-                        </li>
-                    
-                        <li>
-                        
-                            <img src="images/small/03.jpg" alt="FPO" />
-                        
-                        </li>
-                    
-                        <li>
-                        
-                            <img src="images/small/04.jpg" alt="FPO" />
-                        
-                        </li>
-                    
-                        <li>
-                        
-                            <img src="images/small/05.jpg" alt="FPO" />
-                        
-                        </li>
-                        
-                        <li>
-                        
-                            <img src="images/small/06.jpg" alt="FPO" />
-                        
-                        </li>
-                        
-                        <li>
-                        
-                            <img src="images/small/07.jpg" alt="FPO" />
-                        
-                        </li>
-                    
-                        <li>
-                        
-                            <img src="images/small/08.jpg" alt="FPO" />
-                        
-                        </li>
-                    
-                        <li>
-                        
-                            <img src="images/small/09.jpg" alt="FPO" />
-                        
-                        </li>
-                    
-                        <li>
-                        
-                            <img src="images/small/10.jpg" alt="FPO" />
-                        
-                        </li>
-                    
-                    </ul>
-                
-                </div><!-- // .filmStrip -->
         
             </div><!-- // .photoGallery -->
 	
