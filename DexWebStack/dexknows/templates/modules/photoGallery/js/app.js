@@ -1,5 +1,5 @@
 /*jslint nomen: true, evil: false, browser: true */
-/*global DEXO, openRegHighslide, $ */
+/*global $ */
 
 requirejs.config({
     //By default load any module IDs from js/lib

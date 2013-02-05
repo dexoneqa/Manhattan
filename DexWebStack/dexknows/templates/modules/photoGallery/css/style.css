@@ -74,10 +74,10 @@ Module-specific definitions.
 }
 
 .photoGallery > .viewfinder {
+    height: 400px;
 }
 
 .photoGallery > .viewfinder > .display {
-    height: 385px;
     overflow: hidden;
     text-align: center;
 }
@@ -107,7 +107,7 @@ Module-specific definitions.
 .photoGallery > .viewfinder > .filmstrip {
     clip: rect(0 660px 116px 0);
     position: absolute;
-    height: 116px;
+    height: 112px;
     overflow: hidden;
     width: 100%;
 }
@@ -117,6 +117,12 @@ Module-specific definitions.
     background-color: #000;
     filter: alpha(opacity=80);
     opacity: 0.8;
+    position: absolute;
+    top: 362px;
+    z-index: 60;
+}
+
+.photoGallery > .viewfinder > .filmstrip {
 }
 
 .photoGallery > .viewfinder > .filmstrip > .viewport {
@@ -130,15 +136,16 @@ Module-specific definitions.
     line-height: 90px;
     float: left;
     margin: 8px 6px;
+    text-align: center;
     width: 120px;
 }
 
-.photoGallery > .viewfinder > .filmstrip > .viewport > .placeholder > .frame {
+.photoGallery > .viewfinder > .filmstrip > .viewport > .placeholder > img {
     border-color: black;
     border-style: solid;
     border-width: 1px;
-    display: block;
-    height: 90px;
+    cursor: pointer;
+    width: 90px;
     overflow: hidden;
     text-align: center;
 }

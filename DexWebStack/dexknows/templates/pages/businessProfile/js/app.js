@@ -21,7 +21,7 @@ requirejs(
          'text', 
          'app/businessProfile', 
          'text!modules/claimBusiness.html', 
-         'http://player.dexknows.com/player.js?width=640&height=360&embedCode=5jbXhoNDo45BqOnr-FYIqC0T_lxN3b6t&wmode=transparent', 
+         'http://player.dexknows.com/player.js?width=640&height=360&embedCode=hpdWJxNToqTp37AuNP1ub8l-Jh7dvnjj&wmode=transparent', 
          'http://cdn.gigya.com/js/socialize.js?apiKey=2_FYnHm3maZPs7YGHbzoN8mKjLHwkP834TcQAncOZ8aOwx6p8dutqMrDwCeFl7uWLr'
         ],  
         function ($, dexo, text, businessProfile, claimBusiness, ooyala, bigGigya) {
@@ -34,6 +34,10 @@ requirejs(
             $(document).ready(function () {
                 
                 window.console.log("DOM ready fired.");
+
+                OO.Player.create("playerContainer", "hpdWJxNToqTp37AuNP1ub8l-Jh7dvnjj", {
+                    width: 300, height: 533
+                });
                 
                 /**
                  * Wire up event handlers for the "Claim Your Business" dialogue

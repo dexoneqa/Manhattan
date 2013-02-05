@@ -30,15 +30,54 @@ img.businessRating {
 	padding: 0;
 }
 
-.globalBar { position:relative; z-index:2; margin:0px 0px 35px 0px; border-bottom:1px solid #ececec; background:#fafafa;}
-ul.quickLinks {width:110px; white-space:nowrap; list-style: none}
-.quickLinks li { float:right; padding:0px 8px 0px 8px; white-space:nowrap; border-right:1px solid #dfdfdf; }
-.quickLinks .last { border-right:none; }
-.quickLinks a { color:#1d8bfc; font-size:14px; font-weight:bold; white-space:nowrap; }
-.quickLinks a:active { color:#424242; }
-.quickLinks .userDropDown { width:auto; position:relative; text-align:left;	}
+.globalBar {
+    position: relative;
+    z-index: 2;
+    margin: 0px 0px 35px 0px;
+    border-bottom: 1px solid #ececec;
+    background: #fafafa;
+}
 
-.quickLinks .userDropDownList {
+ul.quickLinks {
+    width: 150px;
+    white-space: nowrap;
+    list-style: none;
+}
+
+div.dropdown > ul.quickLinks {
+	margin: -30px 0 0 0;
+	width: 980px;
+}
+
+ul.quickLinks li {
+    float: right;
+    padding: 0px 8px 0px 8px;
+    white-space: nowrap;
+    border-right: 1px solid #dfdfdf;
+}
+
+ul.quickLinks .last {
+    border-right: none;
+}
+
+ul.quickLinks a {
+    color: #1d8bfc;
+    font-size: 14px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+ul.quickLinks a:active {
+    color: #424242;
+}
+
+ul.quickLinks .userDropDown {
+    width: auto;
+    position: relative;
+    text-align: left;
+}
+
+ul.quickLinks .userDropDownList {
 	background-color: #fff;
 	border-bottom:1px solid #e8e8e8;
 	border-left:1px solid #e8e8e8;
@@ -49,10 +88,10 @@ ul.quickLinks {width:110px; white-space:nowrap; list-style: none}
 	z-index:1;
 }
 
-.quickLinks .userDropDownList li { padding:8px 0px 12px 5px; width:auto; float:none; background:white; border: none;}
-.quickLinks .userDropDownList li a { font-weight: normal; color: #000; }
-.quickLinks .userDropDownList li:hover {background:#e4e2e1;}
-.quickLinks .userDropDownList li a:hover {text-decoration:none; color:#000;}
+ul.quickLinks .userDropDownList li { padding:8px 0px 12px 5px; width:auto; float:none; background:white; border: none;}
+ul.quickLinks .userDropDownList li a { font-weight: normal; color: #000; }
+ul.quickLinks .userDropDownList li:hover {background:#e4e2e1;}
+ul.quickLinks .userDropDownList li a:hover {text-decoration:none; color:#000;}
 
 #userDropDownLink { 
 	background-color: transparent;
@@ -91,6 +130,8 @@ li#userDropDown:hover > ul {
 	-webkit-box-shadow: 0 4px 10px #ccc;
 	box-shadow: 0 4px 10px #ccc;
 	height: 50px;
+	display: block;
+	left: 0;
 	position: fixed;
 	top: 0;
 	width: 100%;
@@ -98,10 +139,14 @@ li#userDropDown:hover > ul {
 }
 
 .globalArch > .globalBar, 
-.superStructure, 
+div.superStructure, 
+.footer {
+    width: 980px;
+}
+
+.globalArch > .globalBar, 
 .footer {
     margin: auto;
-    width: 980px;
 }
 
 .globalArch > .globalBar {
@@ -203,7 +248,7 @@ input.globalSearch.inputButton:active {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2258bf', endColorstr='#3a94d6',GradientType=0 ); /* IE6-8 */
 }
 
-.dropdown {
+div.dropdown {
  	position: fixed;
 	top: 46px;
 	text-align: center;
@@ -211,27 +256,28 @@ input.globalSearch.inputButton:active {
 	z-index: 50;
 }
 
-.dropdown > .quickLinks {
-	margin: -30px auto 0;
-	width:980px;
+div.superStructure {
+	margin: auto auto 10px auto;
+	padding: 0;
+	position: relative;
+	top: 50px;
 }
 
-.superStructure {
-	margin: 0 auto 10px auto;
+div.superStructure > .leftWell {
+	width: 600px;
 }
 
-.superStructure > .leftWell {
-	width: 620px;
+div.superStructure > .article, 
+div.superStructure > .aside {
 }
 
-.superStructure > .article {
-    display: inline-block;
-    margin: 0;
-}
-
-.superStructure > .article > .section {
+div.superStructure > .article > .section {
     clear: both;
     width: 100%;    
+}
+
+.rightWell {
+    margin: 0 0 0 10px;
 }
 
 .rightWell > .pagePromote {
@@ -299,9 +345,8 @@ input.globalSearch.inputButton:active {
 
     
 
-.superStructure > .rightWell {
-    display: inline-block;
-    margin: 0 0 0 55px;
+div.superStructure > .rightWell {
+    margin: 0 0 0 10px;
     width: 300px;
 }
 
