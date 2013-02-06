@@ -18,10 +18,10 @@ requirejs.config({
 // Start the main app logic.
 requirejs(
         [
-         'http://cdn1.dxstatic.com.localhost/desktop/scripts/custom/dexo-full.js', 
+         'dexo', 
          'app/script'
         ], 
-        function (dexlib, photoGallery) {
+        function (dexo, photoGallery) {
             
             $(document).ready(function () {
                 

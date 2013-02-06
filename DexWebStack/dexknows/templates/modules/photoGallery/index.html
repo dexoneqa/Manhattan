@@ -10,23 +10,21 @@
 
         <!--[if IE]><![endif]-->
 
-        <!--[if lt IE 10]>
+        <!--[if lt IE 8]><script type="text/javascript" src="https://getfirebug.com/firebug-lite.js"></script><![endif]-->
         
-        <meta http-equiv="x-ua-compatible" content="chrome=1" />
-        
-        <![endif]-->
+        <!--[if lt IE 10]><meta http-equiv="x-ua-compatible" content="chrome=1" /><![endif]-->
         
         <!-- This style block is used just for the module template. -->
         
         <style type="text/css">
         
-            .genericTemplatePage {
+            body.genericTemplatePage {
+                background-color: red;
                 margin: 50px 0 0 0; 
                 width: 100%;
             }
         
-            .genericTemplatePage > .leftRailPlaceholder {
-                border: solid black 1px;
+            body.genericTemplatePage > div.leftRailPlaceholder {
                 margin: auto;
                 width: 660px;
             }
@@ -112,6 +110,18 @@
                         <a href="#">
                         
                             <img src="images/fpo108.jpg" alt="FPO" /></a>
+                        
+                        <a href="#">
+                        
+                            <img src="images/fpo109.jpg" alt="FPO" /></a>
+                        
+                        <a href="#">
+                        
+                            <img src="images/fpo110.jpg" alt="FPO" /></a>
+                        
+                        <a href="#">
+                        
+                            <img src="images/fpo111.jpg" alt="FPO" /></a>
                             
                     </div><!-- // .display -->
                     
@@ -123,57 +133,89 @@
                     
                     <div class="filmstrip">
                     
-                        <ul class="viewport">
-                            
-                            <li class="placeholder">
-                            
-                                <img class="selected" src="images/small/fpo101.jpg" alt="FPO" />
-                                
-                            </li>
-                            
-                            <li class="placeholder">
-                            
-                                <img src="images/small/fpo102.jpg" alt="FPO" />
-                                
-                            </li>
+                        <a class="pagination left" href="#">&lsaquo;</a>
+                    
+                        <a class="pagination right" href="#">&rsaquo;</a>
                         
-                            <li class="placeholder">
-                                
-                                <img src="images/small/fpo103.jpg" alt="FPO" />
-                                
-                            </li>
+                        <div class="viewport">
                         
-                            <li class="placeholder">
-                            
-                                <img src="images/small/fpo104.jpg" alt="FPO" />
+                            <ul class="collection">
                                 
-                            </li>
+                                <li class="placeholder">
+                                
+                                    <img src="images/small/fpo100.jpg" class="selected" alt="FPO" />
+                                    
+                                </li>
+                                
+                                <li class="placeholder">
+                                
+                                    <img src="images/small/fpo101.jpg" alt="FPO" />
+                                    
+                                </li>
+                                
+                                <li class="placeholder">
+                                
+                                    <img src="images/small/fpo102.jpg" alt="FPO" />
+                                    
+                                </li>
+                            
+                                <li class="placeholder">
+                                    
+                                    <img src="images/small/fpo103.jpg" alt="FPO" />
+                                    
+                                </li>
+                            
+                                <li class="placeholder">
+                                
+                                    <img src="images/small/fpo104.jpg" alt="FPO" />
+                                    
+                                </li>
+                            
+                                <li class="placeholder">
+                                
+                                    <img src="images/small/fpo105.jpg" alt="FPO" />
+                                    
+                                </li>
+                                
+                                <li class="placeholder">
+                                
+                                    <img src="images/small/fpo106.jpg" alt="FPO" />
+                                    
+                                </li>
+                                
+                                <li class="placeholder">
+                                
+                                    <img src="images/small/fpo107.jpg" alt="FPO" />
+                                    
+                                </li>
+                            
+                                <li class="placeholder">
+                                
+                                    <img src="images/small/fpo108.jpg" alt="FPO" />
+                                    
+                                </li>
+                            
+                                <li class="placeholder">
+                                
+                                    <img src="images/small/fpo109.jpg" alt="FPO" />
+                                    
+                                </li>
+                            
+                                <li class="placeholder">
+                                
+                                    <img src="images/small/fpo110.jpg" alt="FPO" />
+                                    
+                                </li>
+                            
+                                <li class="placeholder">
+                                
+                                    <img src="images/small/fpo111.jpg" alt="FPO" />
+                                    
+                                </li>
+                            
+                            </ul><!-- // .viewport -->
                         
-                            <li class="placeholder">
-                            
-                                <img src="images/small/fpo105.jpg" alt="FPO" />
-                                
-                            </li>
-                            
-                            <li class="placeholder">
-                            
-                                <img src="images/small/fpo106.jpg" alt="FPO" />
-                                
-                            </li>
-                            
-                            <li class="placeholder">
-                            
-                                <img src="images/small/fpo107.jpg" alt="FPO" />
-                                
-                            </li>
-                        
-                            <li class="placeholder">
-                            
-                                <img src="images/small/fpo108.jpg" alt="FPO" />
-                                
-                            </li>
-                        
-                        </ul><!-- // .viewport -->
+                        </div>
                     
                     </div><!-- // .filmStrip -->
                     
