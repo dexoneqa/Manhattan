@@ -88,6 +88,7 @@ Module-specific definitions.
 }
 
 .photoGallery > .viewfinder > .display > a > img {
+    border: none;
     display: inline;
     position: relative;
     z-index: 50;
@@ -118,11 +119,15 @@ Module-specific definitions.
     filter: alpha(opacity=80);
     opacity: 0.8;
     position: absolute;
-    top: 362px;
     z-index: 60;
 }
 
+.photoGallery > .viewfinder > .caption {
+    top: 338px;
+}
+
 .photoGallery > .viewfinder > .filmstrip {
+    top: 362px;
 }
 
 .photoGallery > .viewfinder > .filmstrip > .viewport {
